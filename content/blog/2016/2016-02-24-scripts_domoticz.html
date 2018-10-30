@@ -1,0 +1,35 @@
+title=Domoticz Script lua Heure Creuse / Heure Pleine
+date=2016-02-24
+type=post
+tags=blog, domoticz
+status=published
+~~~~~~
+
+<p>Voici un script en lua pour domoticz qui permet de ventiler dans deux compteurs différent la consomation heure creuse et heure pleine de votre consomation éléctrique.</p>
+
+<h2>Préambule</h2>
+
+<p>Pour ce script il vous faut une installation <a href='https://domoticz.com/'>domoticz</a> fonctionnelle, un compteur de consomation OWL comme le CM180.</p>
+
+<p>Créer/Avoir dans domoticz</p>
+<ul>
+	<li>le compteur pricipal (owl) ici CONSO</li>
+	<li>Trois variable utilisateurs :</li>
+	<ol>
+		<li>CONSO_LAST_HP</li>
+		<li>CONSO_LAST_HC</li>
+		<li>CONSO_LAST</li>		
+	</ol>
+	<li>Deux compteurs :</li>
+	<ol>
+		<li>CONSO_HP (noter l'index ici idx=57)</li>
+		<li>CONSO_HC (noter l'index ici idx=59)</li>		
+	</ol>
+	<li>Un interupteur HC/HP programmer avec un planning (l'interupteur est à ON pendant les heure creuse)</li>	
+</ul>
+
+<h2>Le script</h2>
+<p>Il est inspiré de celui disponnibe sur le forum domoticz <a href='http://easydomoticz.com/forum/viewtopic.php?t=365'>ici</a>. Copier le script suivant, dans le repertoire  /home/pi/domoticz/scripts/lua/</p>
+
+<script src="https://gist.github.com/tisseurdetoile/f06509b67eadb2996b2a.js"></script>
+
