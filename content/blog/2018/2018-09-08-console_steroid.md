@@ -4,7 +4,9 @@ type=post
 tags=console, outils, cat, ping, man, du, jq, fzf, top, htop, ncdu
 status=published
 ~~~~~~
-Ci-dessous un résumé de l'article que vous retrouverez [ici](https://remysharp.com/2018/08/23/cli-improved), qui recense des outils pour booster votre console, ils remplacent avantageusement leurs illustres prédecesseurs. Le tout testé sur OSX.
+Ci-dessous un résumé de l'article que vous retrouverez [ici](https://remysharp.com/2018/08/23/cli-improved),
+qui recense des outils pour booster votre console, ils remplacent avantageusement
+leurs illustres prédecesseurs. Le tout testé sur OSX.
 
 ## bat - (cat)
 Pour remplacer ```cat``` bienvenue à ```bat```
@@ -145,5 +147,3 @@ alias top='sudo htop'
 alias du='ncdu --color dark -rr -x --exclude .git --exclude node_modules'
 alias help='tldr'
 ```
-`````
-``````
