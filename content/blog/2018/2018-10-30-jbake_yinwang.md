@@ -14,9 +14,10 @@ En résumé il est **simple**, facile a utiliser et **lisible**.
 - Clair
 - Coloration syntaxique
 - Liens sociaux
-- TravisCI integration
+- TravisCI integration [à lire ici](/blog/2017/2017-11-03-jbake_git_travis.html)
 - Support de la pagination de jbake (plus de bidouille :P)
 - page 404 specifique.
+- Liens de partages vers les reseaux sociaux
 
 Un petit screenshot ci dessous
 
@@ -25,7 +26,7 @@ Un petit screenshot ci dessous
 En plus de ce site il y a une version de [démo](http://jbakeyinwangdemo.ouvaton.org/) synchronisé avec le repository principal
 
 Vous pouvez trouver un dépot [github](https://github.com/tisseurdetoile/Jbake-yinwang)
-avec la derniere version en cours. L'ancien thème [jbake-uno](https://github.com/tisseurdetoile/Jbake-yinwang)
+avec la derniere version en cours. L'ancien thème [jbake-uno](https://github.com/tisseurdetoile/jbake-uno)
 sera archivé et certaine de ses fonctionnalités seront porté sur ce nouveau thèmes.
 N'hésitez pas a contribuer.
 
