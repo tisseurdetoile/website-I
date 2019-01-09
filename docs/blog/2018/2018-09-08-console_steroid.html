@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>console sous stéroide</title>
+
+      <meta name="viewport" content="width=device-width, initial-scale=0.5">
+
+    <meta name="description" content="Digression et tautologie">
+    <meta name="author" content="Le TisseurDeToile">
+
+    <meta name="tags" content="console,outils,cat,ping,man,du,jq,fzf,top,htop,ncdu">
+
+    <link href="/feed.xml" rel="alternate" type="application/rss+xml" title="Les derniers billets" />
+
+    <meta name="generator" content="JBake">
+
+    <link rel="stylesheet" href="../../stylesheet.css">
+
+      <meta property="og:url" content="http://www.tisseurdetoile.net/blog/2018/2018-09-08-console_steroid.html" />
+      <meta property="og:title" content="console sous stéroide" />
+
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+    <meta name="twitter:site" content="@tisseurdetoile" />
+    <meta name="twitter:creator" content="@tisseurdetoile" />
+
+    <link rel="manifest" href="../../site.webmanifest"/>
+    <link rel="shortcut icon" href="../../favicon.ico" />
+    <link rel="stylesheet" href="../../main.css">
+    <link rel="stylesheet" href="../../css/line-awesome.min.css">
+
+	<script>
+	  const baseUrl = '/';
+	  const baseUrlIndex = '/index.html';
+      hljs.initHighlightingOnLoad();
+	</script>
+  </head>
+<body>
+<div class="inner" style="position:relative;">
+	<div class="side-btn">
+		<a href="/" class="back">
+			<span class="la-stack la-2x">
+			<i class="la la-circle-thin la-stack-2x"></i>
+			<i class="la la-home la-stack-1x"></i>
+			</span>
+		</a>
+	</div>
+		<div class="blog-post">
+			<h2>console sous stéroide</h2>
+			<p>Ci-dessous un résumé de l'article que vous retrouverez <a href="https://remysharp.com/2018/08/23/cli-improved">ici</a>,<br />
+qui recense des outils pour booster votre console, ils remplacent avantageusement<br />
+leurs illustres prédecesseurs. Le tout testé sur OSX.</p>
+<h2>bat - (cat)</h2>
+<p>Pour remplacer <code>cat</code> bienvenue à <code>bat</code><br />
+<img src="./bat.png" alt="Bat screenshot" /><br />
+* <a href="https://github.com/sharkdp/bat">site officiel</a></p>
+<h3>Installation de bat</h3>
+<p><code># brew install bat</code></p>
+<h3>Les plus</h3>
+<ul>
+<li>coloration syntaxique</li>
+<li>recherche dans le texte</li>
+<li>numérotation des lignes</li>
+</ul>
+<h2>prettyping - (ping)</h2>
+<p>pour remplacer <code>ping</code> bienvenue à <code>prettyping</code><br />
+<img src="./prettyping.png" alt="PrettyPing screenshot" /><br />
+* <a href="http://denilson.sa.nom.br/prettyping/">site officiel</a></p>
+<h3>Installation</h3>
+<p><code># brew install prettyping</code></p>
+<h3>Les plus</h3>
+<ul>
+<li>évolution graphique des temps de réponses</li>
+</ul>
+<h2>fzf (ctrl-r)</h2>
+<p>Un couteau suisse de recherche dans les fichiers votre historique ... etc.<br />
+<img src="./fzf.png" alt="fzf screenshot" /><br />
+* <a href="https://github.com/junegunn/fzf">site officiel</a></p>
+<h3>Installation de  fzf</h3>
+<p><code># brew install fzf</code></p>
+<h3>Usage</h3>
+<p>rechercher dans votre historique avec classe (CTRL-R)<br />
+rechercher dans vos fichiers avec preview <code>fzf --preview 'bat --color always {}'</code></p>
+<h3>Les plus</h3>
+<ul>
+<li>Ah bon on pouvait faire tout cela.</li>
+</ul>
+<h2>bashhub (history)</h2>
+<p>votre historique dans le cloud.<br />
+<img src="./bashhub.png" alt="bashhub screenshot" /><br />
+<a href="https://bashhub.com/">site officiel</a></p>
+<h3>Installation de  bashhub</h3>
+<p>zsh <code># curl -OL https://bashhub.com/setup &amp;&amp; zsh setup</code><br />
+bash <code># curl -OL https://bashhub.com/setup &amp;&amp; bash setup</code></p>
+<h3>Usage</h3>
+<p>CTRL-b<br />
+bh -i</p>
+<h3>Les plus</h3>
+<ul>
+<li>Ah bon on pouvez faire tout cela..</li>
+</ul>
+<h2>htop (top)</h2>
+<p>Suivre vos performance système.<br />
+<img src="./htop.png" alt="htop screenshot" /><br />
+* <a href="http://hisham.hm/htop/">site officiel</a></p>
+<h3>Installation</h3>
+<p><code># brew install htop</code></p>
+<h2>diff-so-fancy (diff)</h2>
+<p><img src="./diffsofancy.png" alt="diffsofancy screenshot" /><br />
+* <a href="https://github.com/so-fancy/diff-so-fancy">site officiel</a></p>
+<h3>Installation</h3>
+<p><code># brew install diff-so-fancy</code></p>
+<h2>fd (find)</h2>
+<p>rechercher dans vos dossier<br />
+<img src="./fd.png" alt="fd screenshot" /><br />
+* <a href="https://github.com/sharkdp/fd/">site officiel</a></p>
+<h3>Installation</h3>
+<p><code># brew install fd</code></p>
+<h2>tree (tree)</h2>
+<p>Affiche une arborecence de repertoire dans le terminal.<br />
+<img src="./tree.png" alt="tree screenshot" /><br />
+* <a href="http://mama.indstate.edu/users/ice/tree/">site officiel</a></p>
+<h3>Installation</h3>
+<p><code># brew install tree</code></p>
+<h3>Usage</h3>
+<ul>
+<li><code>tree -xd -L 1 .</code></li>
+</ul>
+<h2>ncdu (du)</h2>
+<p>Interactive disque usage.<br />
+<img src="./ncdu.png" alt="ncdu screenshot" /><br />
+* <a href="https://dev.yorhel.nl/ncdu">site officiel</a></p>
+<h3>Installation</h3>
+<p><code># brew install ncdu</code></p>
+<h3>Usage</h3>
+<ul>
+<li><code>ncdu --color dark</code></li>
+</ul>
+<h2>gotty (gotty)</h2>
+<p>Exportation de son terminal accessible par une url<br />
+<img src="./gotty.png" alt="gotty server screenshot" /><br />
+<img src="./gotty_clt.png" alt="gotty client screenshot" /></p>
+<h2>Installation</h2>
+<p><code>brew install yudai/gotty/gotty</code></p>
+<h3>Usage</h3>
+<ul>
+<li><code>gotty -w zsh</code><br />
+Attention dans cette exemple on expote un shell zsh interactif utilisable dans un navigateur.</li>
+</ul>
+<h2>jq (interpreter les flux json)</h2>
+<p>Interpréter les flux json comme un boss<br />
+<img src="./jq.png" alt="jq screenshot" /><br />
+* <a href="https://stedolan.github.io/jq/">site officiel</a></p>
+<h3>exemple</h3>
+<pre><code class="language-bash"> # curl 'https://api.github.com/repos/tisseurdetoile/website/commits?per_page=5' | jq '.[0] | {message: .commit.message, name: .commit.committer.name}'
+
+ {
+   &quot;message&quot;: &quot;ajout d'un post de blog&quot;,
+   &quot;name&quot;: &quot;TisseurDeToile&quot;
+ }
+</code></pre>
+<h3>Installation</h3>
+<p><code>brew install jq</code></p>
+<h2>changer ses aliases</h2>
+<p>Selon votre shell modifier le fichiers .zsh_alias ou bash_alias pour qu’il contienne les lignes suivantes.</p>
+<pre><code> # cat .zsh_alias
+alias cat='bat'
+alias ping='prettyping --nolegend'
+alias top='sudo htop'
+alias du='ncdu --color dark -rr -x --exclude .git --exclude node_modules'
+alias help='tldr'
+</code></pre>
+
+			<br />
+			<br />
+			<br />
+			<br />
+
+<ul class="sharelinks">
+<li><a href="/" class="share-btn"><i class="la la-lg la-share"></i></a></li>
+
+<li><a href="http://www.tisseurdetoile.net/blog/2018/2018-02-10-new_jbake.html" title="the jbake-uno" class="share-btn">
+<i class="la la-lg la-angle-left"></i></a></li>
+
+<li><a href="//twitter.com/share?url=http%3A%2F%2Fwww.tisseurdetoile.net%2Fblog%2F2018%2F2018-09-08-console_steroid.html&text=console%20sous%20st%C3%A9roide&via=tisseurdetoile" target="_blank" class="share-btn twitter">
+    <i class="la la-twitter"></i>
+</a></li>
+
+<li><a href="//www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.tisseurdetoile.net%2Fblog%2F2018%2F2018-09-08-console_steroid.html" target="_blank" class="share-btn facebook">
+    <i class="la la-facebook"></i>
+</a></li>
+
+<li><a href="//www.linkedin.com/shareArticle?url=http%3A%2F%2Fwww.tisseurdetoile.net%2Fblog%2F2018%2F2018-09-08-console_steroid.html&title=console%20sous%20st%C3%A9roide" target="_blank" class="share-btn linkedin">
+    <i class="la la-linkedin"></i>
+</a></li>
+
+<li><a href="mailto:?subject=Check%20out%20this%20post%20by%20Le%20TisseurDeToile&body=http%3A%2F%2Fwww.tisseurdetoile.net%2Fblog%2F2018%2F2018-09-08-console_steroid.html" target="_blank" class="share-btn email">
+    <i class="la la-envelope"></i>
+</a></li>
+
+ <li><a href="http://www.tisseurdetoile.net/blog/2018/2018-10-30-jbake_yinwang.html" title="Jbake-yinwang mon nouveau thème pour jbake" class="share-btn">
+ <i class="la la-lg la-angle-right"></i></a></li>
+</ul>
+
+		</div>
+
+      <footer>
+        <hr>
+        <small style="font-size:16px;">
+          &copy; 2018 <a href="https://github.com/tisseurdetoile">Le TisseurDeToile.</a>
+          Baked with <a href="http://jbake.org">JBake v2.6.3</a> using the jbaked-<a href="http://github.com/tisseurdetoile/jbake-yinwang">yinwang</a> theme.
+        </small>
+      </footer>
+    </div>     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+
+    <!-- BAKED AT <2019-01-09T22:13:04+01:00> -->
+  </body>
+</html>

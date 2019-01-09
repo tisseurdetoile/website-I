@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>the jbake-uno</title>
+
+      <meta name="viewport" content="width=device-width, initial-scale=0.5">
+
+    <meta name="description" content="Digression et tautologie">
+    <meta name="author" content="Le TisseurDeToile">
+
+    <meta name="tags" content="jbake,jbake-uno,git,theme">
+
+    <link href="/feed.xml" rel="alternate" type="application/rss+xml" title="Les derniers billets" />
+
+    <meta name="generator" content="JBake">
+
+    <link rel="stylesheet" href="../../stylesheet.css">
+
+      <meta property="og:url" content="http://www.tisseurdetoile.net/blog/2018/2018-02-10-new_jbake.html" />
+      <meta property="og:title" content="the jbake-uno" />
+
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+    <meta name="twitter:site" content="@tisseurdetoile" />
+    <meta name="twitter:creator" content="@tisseurdetoile" />
+
+    <link rel="manifest" href="../../site.webmanifest"/>
+    <link rel="shortcut icon" href="../../favicon.ico" />
+    <link rel="stylesheet" href="../../main.css">
+    <link rel="stylesheet" href="../../css/line-awesome.min.css">
+
+	<script>
+	  const baseUrl = '/';
+	  const baseUrlIndex = '/index.html';
+      hljs.initHighlightingOnLoad();
+	</script>
+  </head>
+<body>
+<div class="inner" style="position:relative;">
+	<div class="side-btn">
+		<a href="/" class="back">
+			<span class="la-stack la-2x">
+			<i class="la la-circle-thin la-stack-2x"></i>
+			<i class="la la-home la-stack-1x"></i>
+			</span>
+		</a>
+	</div>
+		<div class="blog-post">
+			<h2>the jbake-uno</h2>
+			<h3>Jbake 1.1.1</h3>
+<p>Un petit point sur la mise à jour de thème <a href="https://github.com/tisseurdetoile/jbake-uno">jbake-uno</a>.<br />
+qui propulse ce site et est maintenu par votre serviteur.</p>
+<h3>Les Nouveautés</h3>
+<ul>
+<li>le support de l'integration continue avec <a href="http://www.travisci.org">travisCI.org</a>
+<ul>
+<li>c.f. le <a href="/blog/2017/2017-11-03-jbake_git_travis.html">post suivant</a></li>
+</ul>
+</li>
+<li>l'ajout du temps de lecture d'un article avec <a href="https://github.com/michael-lynch/reading-time">readingTime</a></li>
+<li>une page de recherche (essentiellement les tags) <a href="/search.html">ici</a></li>
+<li>la possibilité de définir l'id du body</li>
+<li>des corrections mineurs</li>
+</ul>
+<h3>Installation</h3>
+<ul>
+<li>recuperer/installer <a href="http://jbake.org/docs/2.5.1/#installation">jbake</a>
+<ul>
+<li>sur osx <code>brew update jbake</code></li>
+</ul>
+</li>
+<li>fourcher le repository sur gitHub.</li>
+<li>le cloner sur votre poste
+<ul>
+<li><code>git clone git@github.com:__yourGithubName__/jbake-uno.git</code></li>
+</ul>
+</li>
+<li>garder le lien avec le repository d'origin
+<ul>
+<li><code>git remote add upstream git@github.com:tisseurdetoile/jbake-uno.git</code></li>
+<li><code>git fetch upstream</code></li>
+</ul>
+</li>
+<li>editer jbake.properties</li>
+<li>ajouter des billets de blog.</li>
+<li>faire vos commit
+<ul>
+<li><code>git commit - m &quot;mon message&quot;</code></li>
+</ul>
+</li>
+<li>tester sur votre poste
+<ul>
+<li><code>jbake -b -s</code></li>
+</ul>
+</li>
+<li>faire le lien avec travisCI</li>
+<li>pousser vos changement
+<ul>
+<li><code>git push</code></li>
+</ul>
+</li>
+</ul>
+<h3>mise à jour</h3>
+<p>Pour recupérer les changements fait par l'origine du thème.</p>
+<ul>
+<li><code>git fetch upstream</code></li>
+<li><code>git rebase upstream/master</code>
+<ul>
+<li>faire les mergetool et finir le rebase.</li>
+</ul>
+</li>
+<li>tester sur votre poste
+<ul>
+<li><code>jbake -b -s</code></li>
+</ul>
+</li>
+<li>pousser vos changement
+<ul>
+<li><code>git push</code></li>
+</ul>
+</li>
+</ul>
+
+			<br />
+			<br />
+			<br />
+			<br />
+
+<ul class="sharelinks">
+<li><a href="/" class="share-btn"><i class="la la-lg la-share"></i></a></li>
+
+<li><a href="http://www.tisseurdetoile.net/blog/2018/2018-01-24-equipement.html" title="Mon équipement 2018" class="share-btn">
+<i class="la la-lg la-angle-left"></i></a></li>
+
+<li><a href="//twitter.com/share?url=http%3A%2F%2Fwww.tisseurdetoile.net%2Fblog%2F2018%2F2018-02-10-new_jbake.html&text=the%20jbake-uno&via=tisseurdetoile" target="_blank" class="share-btn twitter">
+    <i class="la la-twitter"></i>
+</a></li>
+
+<li><a href="//www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.tisseurdetoile.net%2Fblog%2F2018%2F2018-02-10-new_jbake.html" target="_blank" class="share-btn facebook">
+    <i class="la la-facebook"></i>
+</a></li>
+
+<li><a href="//www.linkedin.com/shareArticle?url=http%3A%2F%2Fwww.tisseurdetoile.net%2Fblog%2F2018%2F2018-02-10-new_jbake.html&title=the%20jbake-uno" target="_blank" class="share-btn linkedin">
+    <i class="la la-linkedin"></i>
+</a></li>
+
+<li><a href="mailto:?subject=Check%20out%20this%20post%20by%20Le%20TisseurDeToile&body=http%3A%2F%2Fwww.tisseurdetoile.net%2Fblog%2F2018%2F2018-02-10-new_jbake.html" target="_blank" class="share-btn email">
+    <i class="la la-envelope"></i>
+</a></li>
+
+ <li><a href="http://www.tisseurdetoile.net/blog/2018/2018-09-08-console_steroid.html" title="console sous stéroide" class="share-btn">
+ <i class="la la-lg la-angle-right"></i></a></li>
+</ul>
+
+		</div>
+
+      <footer>
+        <hr>
+        <small style="font-size:16px;">
+          &copy; 2018 <a href="https://github.com/tisseurdetoile">Le TisseurDeToile.</a>
+          Baked with <a href="http://jbake.org">JBake v2.6.3</a> using the jbaked-<a href="http://github.com/tisseurdetoile/jbake-yinwang">yinwang</a> theme.
+        </small>
+      </footer>
+    </div>     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+
+    <!-- BAKED AT <2019-01-09T22:13:04+01:00> -->
+  </body>
+</html>

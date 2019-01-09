@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>Pour un blog static facile avec JBAKE + GIT + TRAVISCI</title>
+
+      <meta name="viewport" content="width=device-width, initial-scale=0.5">
+
+    <meta name="description" content="Digression et tautologie">
+    <meta name="author" content="Le TisseurDeToile">
+
+    <meta name="tags" content="jbake,travisci,git">
+
+    <link href="/feed.xml" rel="alternate" type="application/rss+xml" title="Les derniers billets" />
+
+    <meta name="generator" content="JBake">
+
+    <link rel="stylesheet" href="../../stylesheet.css">
+
+      <meta property="og:url" content="http://www.tisseurdetoile.net/blog/2017/2017-11-03-jbake_git_travis.html" />
+      <meta property="og:title" content="Pour un blog static facile avec JBAKE + GIT + TRAVISCI" />
+
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+    <meta name="twitter:site" content="@tisseurdetoile" />
+    <meta name="twitter:creator" content="@tisseurdetoile" />
+
+    <link rel="manifest" href="../../site.webmanifest"/>
+    <link rel="shortcut icon" href="../../favicon.ico" />
+    <link rel="stylesheet" href="../../main.css">
+    <link rel="stylesheet" href="../../css/line-awesome.min.css">
+
+	<script>
+	  const baseUrl = '/';
+	  const baseUrlIndex = '/index.html';
+      hljs.initHighlightingOnLoad();
+	</script>
+  </head>
+<body>
+<div class="inner" style="position:relative;">
+	<div class="side-btn">
+		<a href="/" class="back">
+			<span class="la-stack la-2x">
+			<i class="la la-circle-thin la-stack-2x"></i>
+			<i class="la la-home la-stack-1x"></i>
+			</span>
+		</a>
+	</div>
+		<div class="blog-post">
+			<h2>Pour un blog static facile avec JBAKE + GIT + TRAVISCI</h2>
+			<p>Un blog statique c'est cool, moins de problème de sécurité, une vitesse de rendu sans pareil, n'importe qu'elle hebergeur peux faire l'affaire. Mais c'est aussi dire bonjour à une mise plus fastidieuse à coup de ftp. Pour rendre tout cela fluide le triptyque JBake + Git + TravisCi est une des solution.</p>
+<h2>Ce qu'il faut</h2>
+<ul>
+<li>Un repository GIT publique. (comme <a href="https://github.com/tisseurdetoile/jbake-uno">https://github.com/tisseurdetoile/jbake-uno</a>)</li>
+<li>Les identifiants FTP de votre site web ainsi que le chemin attendus des fichiers.</li>
+<li>configurer travisCI</li>
+</ul>
+<h2>Comment faire</h2>
+<ul>
+<li>forker mon template jbake-uno<br />
+<img src="https://framapic.org/CbHEY7VEW1rO/FusAcIV23yGM.png" alt="travisCi Environnement variable" /></li>
+<li>cloner ce nouveau repository sur votre poste
+<ul>
+<li><code>git clone git@github.com:&lt;yourName&gt;/jbake-uno.git</code></li>
+</ul>
+</li>
+<li>commencer à écrire votre blog
+<ul>
+<li>modifier jbake.properties pour le configurer à vos besoin.</li>
+<li>créer/editer les fichier dans content/blog/YYYY/YYYY-MM-JJ-name.md</li>
+</ul>
+</li>
+<li>faite vos tests
+<ul>
+<li><code>jbake -b</code></li>
+<li><code>jbake -s</code></li>
+</ul>
+</li>
+<li>configurer travisCI<br />
+<img src="https://framapic.org/jDO2lNuVVUn0/J6yhAIdTbQBv.png" alt="travisCi Environnement variable" />
+<ul>
+<li>HOST contient le nom de l'hôte ftp</li>
+<li>USER contient le nom de l'utilisateur ftp</li>
+<li>PASS contient le mot de passe de l'utilisateur ftp</li>
+<li>SITE_PATH contient le chemin depuis la racine ou uploader les fichiers</li>
+</ul>
+</li>
+<li>&quot;comiter&quot; sur master
+<ul>
+<li><code>git add content/blog/</code></li>
+<li><code>git commit -m &quot;message&quot;</code></li>
+<li><code>git push</code></li>
+</ul>
+</li>
+<li>surveiller le build travisCI</li>
+<li>regarder sur votre site web</li>
+</ul>
+<h2>S'inspirer</h2>
+<p>vous pouvez regarder le fichier .travis.yml pour la configuration de travisCi et aussi le fichier scripts/travis_build</p>
+
+			<br />
+			<br />
+			<br />
+			<br />
+
+<ul class="sharelinks">
+<li><a href="/" class="share-btn"><i class="la la-lg la-share"></i></a></li>
+
+<li><a href="http://www.tisseurdetoile.net/blog/2017/2017-01-09-equipement.html" title="Mon équipement 2017" class="share-btn">
+<i class="la la-lg la-angle-left"></i></a></li>
+
+<li><a href="//twitter.com/share?url=http%3A%2F%2Fwww.tisseurdetoile.net%2Fblog%2F2017%2F2017-11-03-jbake_git_travis.html&text=Pour%20un%20blog%20static%20facile%20avec%20JBAKE%20%2B%20GIT%20%2B%20TRAVISCI&via=tisseurdetoile" target="_blank" class="share-btn twitter">
+    <i class="la la-twitter"></i>
+</a></li>
+
+<li><a href="//www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.tisseurdetoile.net%2Fblog%2F2017%2F2017-11-03-jbake_git_travis.html" target="_blank" class="share-btn facebook">
+    <i class="la la-facebook"></i>
+</a></li>
+
+<li><a href="//www.linkedin.com/shareArticle?url=http%3A%2F%2Fwww.tisseurdetoile.net%2Fblog%2F2017%2F2017-11-03-jbake_git_travis.html&title=Pour%20un%20blog%20static%20facile%20avec%20JBAKE%20%2B%20GIT%20%2B%20TRAVISCI" target="_blank" class="share-btn linkedin">
+    <i class="la la-linkedin"></i>
+</a></li>
+
+<li><a href="mailto:?subject=Check%20out%20this%20post%20by%20Le%20TisseurDeToile&body=http%3A%2F%2Fwww.tisseurdetoile.net%2Fblog%2F2017%2F2017-11-03-jbake_git_travis.html" target="_blank" class="share-btn email">
+    <i class="la la-envelope"></i>
+</a></li>
+
+ <li><a href="http://www.tisseurdetoile.net/blog/2018/2018-01-24-equipement.html" title="Mon équipement 2018" class="share-btn">
+ <i class="la la-lg la-angle-right"></i></a></li>
+</ul>
+
+		</div>
+
+      <footer>
+        <hr>
+        <small style="font-size:16px;">
+          &copy; 2018 <a href="https://github.com/tisseurdetoile">Le TisseurDeToile.</a>
+          Baked with <a href="http://jbake.org">JBake v2.6.3</a> using the jbaked-<a href="http://github.com/tisseurdetoile/jbake-yinwang">yinwang</a> theme.
+        </small>
+      </footer>
+    </div>     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+
+    <!-- BAKED AT <2019-01-09T22:13:04+01:00> -->
+  </body>
+</html>

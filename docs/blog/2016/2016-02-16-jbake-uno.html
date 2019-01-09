@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>OSx a cassé mon jekyll je passe sur jbake</title>
+
+      <meta name="viewport" content="width=device-width, initial-scale=0.5">
+
+    <meta name="description" content="Digression et tautologie">
+    <meta name="author" content="Le TisseurDeToile">
+
+    <meta name="tags" content="theme,jbake">
+
+    <link href="/feed.xml" rel="alternate" type="application/rss+xml" title="Les derniers billets" />
+
+    <meta name="generator" content="JBake">
+
+    <link rel="stylesheet" href="../../stylesheet.css">
+
+      <meta property="og:url" content="http://www.tisseurdetoile.net/blog/2016/2016-02-16-jbake-uno.html" />
+      <meta property="og:title" content="OSx a cassé mon jekyll je passe sur jbake" />
+
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+    <meta name="twitter:site" content="@tisseurdetoile" />
+    <meta name="twitter:creator" content="@tisseurdetoile" />
+
+    <link rel="manifest" href="../../site.webmanifest"/>
+    <link rel="shortcut icon" href="../../favicon.ico" />
+    <link rel="stylesheet" href="../../main.css">
+    <link rel="stylesheet" href="../../css/line-awesome.min.css">
+
+	<script>
+	  const baseUrl = '/';
+	  const baseUrlIndex = '/index.html';
+      hljs.initHighlightingOnLoad();
+	</script>
+  </head>
+<body>
+<div class="inner" style="position:relative;">
+	<div class="side-btn">
+		<a href="/" class="back">
+			<span class="la-stack la-2x">
+			<i class="la la-circle-thin la-stack-2x"></i>
+			<i class="la la-home la-stack-1x"></i>
+			</span>
+		</a>
+	</div>
+		<div class="blog-post">
+			<h2>OSx a cassé mon jekyll je passe sur jbake</h2>
+			<p>Comme OSX maverick n'apprécie pas trop jekyll (Ruby), un problème presque après chaque mise à jour. J'ai donc essayé plusieurs moteur de blog statique. Et finalement c'est la promesse du &quot;Write once run everywhere&quot; de java et donc de jbake qui m'a séduit.</p>
+<p>Le thème de base n'est pas des plus attrayant. J'ai donc adapté le thème <a href="http://jekyllthemes.org/themes/jekyll-uno/">jekyll-uno</a> qui est relativement simple. Cette adaptation est <a href="https://github.com/tisseurdetoile/jbake-uno">jbake-uno</a> une démonstration est disponible <a href="http://www.tisseurdetoile.net/jbake-uno/">ici</a>.</p>
+<h2>mise en place</h2>
+<h4>Installation de jbake</h4>
+<p>Installation de jbake <code>brew install jbake</code></p>
+<h4>Récupération du thème</h4>
+<ol>
+<li>Cloner le repo git <code>git clone git@github.com:tisseurdetoile/jbake-uno.git</code></li>
+<li>Enter dans le répertoire: <code>cd jbake-uno/</code></li>
+<li>Cuire le thème : <code>jbake -b</code></li>
+<li>Démarrer le serveur jbake : <code>jbake -s</code></li>
+</ol>
+<h4>Commencer à écrire</h4>
+<p>Il vous suffit de créer des fichiers dans content/blog/YYYY/YYYY-MM-DD_nom-du-fichier.md<br />
+et c'est partie.</p>
+<p>Cuire le blog avec  <code>jbake -b</code><br />
+On teste le résultât avec <code>jbake -s</code><br />
+On upload le contenu du répertoire output.</p>
+
+			<br />
+			<br />
+			<br />
+			<br />
+
+<ul class="sharelinks">
+<li><a href="/" class="share-btn"><i class="la la-lg la-share"></i></a></li>
+
+<li><a href="http://www.tisseurdetoile.net/blog/2016/2016-02-13-equipements.html" title="Mon equipement 2016" class="share-btn">
+<i class="la la-lg la-angle-left"></i></a></li>
+
+<li><a href="//twitter.com/share?url=http%3A%2F%2Fwww.tisseurdetoile.net%2Fblog%2F2016%2F2016-02-16-jbake-uno.html&text=OSx%20a%20cass%C3%A9%20mon%20jekyll%20je%20passe%20sur%20jbake&via=tisseurdetoile" target="_blank" class="share-btn twitter">
+    <i class="la la-twitter"></i>
+</a></li>
+
+<li><a href="//www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.tisseurdetoile.net%2Fblog%2F2016%2F2016-02-16-jbake-uno.html" target="_blank" class="share-btn facebook">
+    <i class="la la-facebook"></i>
+</a></li>
+
+<li><a href="//www.linkedin.com/shareArticle?url=http%3A%2F%2Fwww.tisseurdetoile.net%2Fblog%2F2016%2F2016-02-16-jbake-uno.html&title=OSx%20a%20cass%C3%A9%20mon%20jekyll%20je%20passe%20sur%20jbake" target="_blank" class="share-btn linkedin">
+    <i class="la la-linkedin"></i>
+</a></li>
+
+<li><a href="mailto:?subject=Check%20out%20this%20post%20by%20Le%20TisseurDeToile&body=http%3A%2F%2Fwww.tisseurdetoile.net%2Fblog%2F2016%2F2016-02-16-jbake-uno.html" target="_blank" class="share-btn email">
+    <i class="la la-envelope"></i>
+</a></li>
+
+ <li><a href="http://www.tisseurdetoile.net/blog/2016/2016-02-24-scripts_domoticz.html" title="Domoticz Script lua Heure Creuse / Heure Pleine" class="share-btn">
+ <i class="la la-lg la-angle-right"></i></a></li>
+</ul>
+
+		</div>
+
+      <footer>
+        <hr>
+        <small style="font-size:16px;">
+          &copy; 2018 <a href="https://github.com/tisseurdetoile">Le TisseurDeToile.</a>
+          Baked with <a href="http://jbake.org">JBake v2.6.3</a> using the jbaked-<a href="http://github.com/tisseurdetoile/jbake-yinwang">yinwang</a> theme.
+        </small>
+      </footer>
+    </div>     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+
+    <!-- BAKED AT <2019-01-09T22:13:04+01:00> -->
+  </body>
+</html>

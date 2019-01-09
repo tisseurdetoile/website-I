@@ -1,0 +1,932 @@
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>JBake</title>
+    <link>http://www.tisseurdetoile.net</link>
+    <atom:link href="http://www.tisseurdetoile.net/feed.xml" rel="self" type="application/rss+xml" />
+    <description>Digression et tautologie</description>
+    <language>fr</language>
+    <pubDate>mer., 9 janv. 2019 22:13:04 +0100</pubDate>
+    <lastBuildDate>mer., 9 janv. 2019 22:13:04 +0100</lastBuildDate>
+
+    <item>
+      <title>Jbake-yinwang mon nouveau thème pour jbake</title>
+      <link>http://www.tisseurdetoile.net/blog/2018/2018-10-30-jbake_yinwang.html</link>
+      <pubDate>mar., 30 oct. 2018 00:00:00 +0100</pubDate>
+      <guid isPermaLink="false">blog/2018/2018-10-30-jbake_yinwang.html</guid>
+      	<description>
+	&lt;p&gt;Voici un nouveau &lt;a href=&quot;https://github.com/tisseurdetoile/Jbake-yinwang&quot;&gt;thème&lt;/a&gt; pour &lt;a href=&quot;http://www.jbake.org&quot;&gt;jbake&lt;/a&gt;, il est inspiré du thème &lt;a href=&quot;https://themes.gohugo.io/gohugo-theme-yinwang/&quot;&gt;ynwang&lt;/a&gt; un thème pour &lt;a href=&quot;https://gohugo.io/&quot;&gt;Hugo&lt;/a&gt;&lt;br /&gt;
+En résumé il est &lt;strong&gt;simple&lt;/strong&gt;, facile a utiliser et &lt;strong&gt;lisible&lt;/strong&gt;.&lt;/p&gt;
+&lt;h2&gt;Les principales fonctionnalités sont :&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Clair&lt;/li&gt;
+&lt;li&gt;Coloration syntaxique&lt;/li&gt;
+&lt;li&gt;Liens sociaux&lt;/li&gt;
+&lt;li&gt;TravisCI integration &lt;a href=&quot;/blog/2017/2017-11-03-jbake_git_travis.html&quot;&gt;à lire ici&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Support de la pagination de jbake (plus de bidouille :P)&lt;/li&gt;
+&lt;li&gt;page 404 specifique.&lt;/li&gt;
+&lt;li&gt;Liens de partages vers les reseaux sociaux&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Un petit screenshot ci dessous&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;./newjbakeynwang.png&quot; alt=&quot;Bat screenshot&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;En plus de ce site il y a une version de &lt;a href=&quot;http://jbakeyinwangdemo.ouvaton.org/&quot;&gt;démo&lt;/a&gt; synchronisé avec le repository principal&lt;/p&gt;
+&lt;p&gt;Vous pouvez trouver un dépot &lt;a href=&quot;https://github.com/tisseurdetoile/Jbake-yinwang&quot;&gt;github&lt;/a&gt;&lt;br /&gt;
+avec la derniere version en cours. L&apos;ancien thème &lt;a href=&quot;https://github.com/tisseurdetoile/jbake-uno&quot;&gt;jbake-uno&lt;/a&gt;&lt;br /&gt;
+sera archivé et certaine de ses fonctionnalités seront porté sur ce nouveau thèmes.&lt;br /&gt;
+N&apos;hésitez pas a contribuer.&lt;/p&gt;
+
+	</description>
+    </item>
+    <item>
+      <title>console sous stéroide</title>
+      <link>http://www.tisseurdetoile.net/blog/2018/2018-09-08-console_steroid.html</link>
+      <pubDate>sam., 15 sept. 2018 00:00:00 +0200</pubDate>
+      <guid isPermaLink="false">blog/2018/2018-09-08-console_steroid.html</guid>
+      	<description>
+	&lt;p&gt;Ci-dessous un résumé de l&apos;article que vous retrouverez &lt;a href=&quot;https://remysharp.com/2018/08/23/cli-improved&quot;&gt;ici&lt;/a&gt;,&lt;br /&gt;
+qui recense des outils pour booster votre console, ils remplacent avantageusement&lt;br /&gt;
+leurs illustres prédecesseurs. Le tout testé sur OSX.&lt;/p&gt;
+&lt;h2&gt;bat - (cat)&lt;/h2&gt;
+&lt;p&gt;Pour remplacer &lt;code&gt;cat&lt;/code&gt; bienvenue à &lt;code&gt;bat&lt;/code&gt;&lt;br /&gt;
+&lt;img src=&quot;./bat.png&quot; alt=&quot;Bat screenshot&quot; /&gt;&lt;br /&gt;
+* &lt;a href=&quot;https://github.com/sharkdp/bat&quot;&gt;site officiel&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;Installation de bat&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;# brew install bat&lt;/code&gt;&lt;/p&gt;
+&lt;h3&gt;Les plus&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;coloration syntaxique&lt;/li&gt;
+&lt;li&gt;recherche dans le texte&lt;/li&gt;
+&lt;li&gt;numérotation des lignes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;prettyping - (ping)&lt;/h2&gt;
+&lt;p&gt;pour remplacer &lt;code&gt;ping&lt;/code&gt; bienvenue à &lt;code&gt;prettyping&lt;/code&gt;&lt;br /&gt;
+&lt;img src=&quot;./prettyping.png&quot; alt=&quot;PrettyPing screenshot&quot; /&gt;&lt;br /&gt;
+* &lt;a href=&quot;http://denilson.sa.nom.br/prettyping/&quot;&gt;site officiel&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;Installation&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;# brew install prettyping&lt;/code&gt;&lt;/p&gt;
+&lt;h3&gt;Les plus&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;évolution graphique des temps de réponses&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;fzf (ctrl-r)&lt;/h2&gt;
+&lt;p&gt;Un couteau suisse de recherche dans les fichiers votre historique ... etc.&lt;br /&gt;
+&lt;img src=&quot;./fzf.png&quot; alt=&quot;fzf screenshot&quot; /&gt;&lt;br /&gt;
+* &lt;a href=&quot;https://github.com/junegunn/fzf&quot;&gt;site officiel&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;Installation de  fzf&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;# brew install fzf&lt;/code&gt;&lt;/p&gt;
+&lt;h3&gt;Usage&lt;/h3&gt;
+&lt;p&gt;rechercher dans votre historique avec classe (CTRL-R)&lt;br /&gt;
+rechercher dans vos fichiers avec preview &lt;code&gt;fzf --preview &apos;bat --color always {}&apos;&lt;/code&gt;&lt;/p&gt;
+&lt;h3&gt;Les plus&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Ah bon on pouvait faire tout cela.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;bashhub (history)&lt;/h2&gt;
+&lt;p&gt;votre historique dans le cloud.&lt;br /&gt;
+&lt;img src=&quot;./bashhub.png&quot; alt=&quot;bashhub screenshot&quot; /&gt;&lt;br /&gt;
+&lt;a href=&quot;https://bashhub.com/&quot;&gt;site officiel&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;Installation de  bashhub&lt;/h3&gt;
+&lt;p&gt;zsh &lt;code&gt;# curl -OL https://bashhub.com/setup &amp;amp;&amp;amp; zsh setup&lt;/code&gt;&lt;br /&gt;
+bash &lt;code&gt;# curl -OL https://bashhub.com/setup &amp;amp;&amp;amp; bash setup&lt;/code&gt;&lt;/p&gt;
+&lt;h3&gt;Usage&lt;/h3&gt;
+&lt;p&gt;CTRL-b&lt;br /&gt;
+bh -i&lt;/p&gt;
+&lt;h3&gt;Les plus&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Ah bon on pouvez faire tout cela..&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;htop (top)&lt;/h2&gt;
+&lt;p&gt;Suivre vos performance système.&lt;br /&gt;
+&lt;img src=&quot;./htop.png&quot; alt=&quot;htop screenshot&quot; /&gt;&lt;br /&gt;
+* &lt;a href=&quot;http://hisham.hm/htop/&quot;&gt;site officiel&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;Installation&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;# brew install htop&lt;/code&gt;&lt;/p&gt;
+&lt;h2&gt;diff-so-fancy (diff)&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;./diffsofancy.png&quot; alt=&quot;diffsofancy screenshot&quot; /&gt;&lt;br /&gt;
+* &lt;a href=&quot;https://github.com/so-fancy/diff-so-fancy&quot;&gt;site officiel&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;Installation&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;# brew install diff-so-fancy&lt;/code&gt;&lt;/p&gt;
+&lt;h2&gt;fd (find)&lt;/h2&gt;
+&lt;p&gt;rechercher dans vos dossier&lt;br /&gt;
+&lt;img src=&quot;./fd.png&quot; alt=&quot;fd screenshot&quot; /&gt;&lt;br /&gt;
+* &lt;a href=&quot;https://github.com/sharkdp/fd/&quot;&gt;site officiel&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;Installation&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;# brew install fd&lt;/code&gt;&lt;/p&gt;
+&lt;h2&gt;tree (tree)&lt;/h2&gt;
+&lt;p&gt;Affiche une arborecence de repertoire dans le terminal.&lt;br /&gt;
+&lt;img src=&quot;./tree.png&quot; alt=&quot;tree screenshot&quot; /&gt;&lt;br /&gt;
+* &lt;a href=&quot;http://mama.indstate.edu/users/ice/tree/&quot;&gt;site officiel&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;Installation&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;# brew install tree&lt;/code&gt;&lt;/p&gt;
+&lt;h3&gt;Usage&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;tree -xd -L 1 .&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;ncdu (du)&lt;/h2&gt;
+&lt;p&gt;Interactive disque usage.&lt;br /&gt;
+&lt;img src=&quot;./ncdu.png&quot; alt=&quot;ncdu screenshot&quot; /&gt;&lt;br /&gt;
+* &lt;a href=&quot;https://dev.yorhel.nl/ncdu&quot;&gt;site officiel&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;Installation&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;# brew install ncdu&lt;/code&gt;&lt;/p&gt;
+&lt;h3&gt;Usage&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;ncdu --color dark&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;gotty (gotty)&lt;/h2&gt;
+&lt;p&gt;Exportation de son terminal accessible par une url&lt;br /&gt;
+&lt;img src=&quot;./gotty.png&quot; alt=&quot;gotty server screenshot&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;./gotty_clt.png&quot; alt=&quot;gotty client screenshot&quot; /&gt;&lt;/p&gt;
+&lt;h2&gt;Installation&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;brew install yudai/gotty/gotty&lt;/code&gt;&lt;/p&gt;
+&lt;h3&gt;Usage&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;gotty -w zsh&lt;/code&gt;&lt;br /&gt;
+Attention dans cette exemple on expote un shell zsh interactif utilisable dans un navigateur.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;jq (interpreter les flux json)&lt;/h2&gt;
+&lt;p&gt;Interpréter les flux json comme un boss&lt;br /&gt;
+&lt;img src=&quot;./jq.png&quot; alt=&quot;jq screenshot&quot; /&gt;&lt;br /&gt;
+* &lt;a href=&quot;https://stedolan.github.io/jq/&quot;&gt;site officiel&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;exemple&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt; # curl &apos;https://api.github.com/repos/tisseurdetoile/website/commits?per_page=5&apos; | jq &apos;.[0] | {message: .commit.message, name: .commit.committer.name}&apos;
+
+ {
+   &amp;quot;message&amp;quot;: &amp;quot;ajout d&apos;un post de blog&amp;quot;,
+   &amp;quot;name&amp;quot;: &amp;quot;TisseurDeToile&amp;quot;
+ }
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;Installation&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;brew install jq&lt;/code&gt;&lt;/p&gt;
+&lt;h2&gt;changer ses aliases&lt;/h2&gt;
+&lt;p&gt;Selon votre shell modifier le fichiers .zsh_alias ou bash_alias pour qu’il contienne les lignes suivantes.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt; # cat .zsh_alias
+alias cat=&apos;bat&apos;
+alias ping=&apos;prettyping --nolegend&apos;
+alias top=&apos;sudo htop&apos;
+alias du=&apos;ncdu --color dark -rr -x --exclude .git --exclude node_modules&apos;
+alias help=&apos;tldr&apos;
+&lt;/code&gt;&lt;/pre&gt;
+
+	</description>
+    </item>
+    <item>
+      <title>the jbake-uno</title>
+      <link>http://www.tisseurdetoile.net/blog/2018/2018-02-10-new_jbake.html</link>
+      <pubDate>sam., 10 févr. 2018 00:00:00 +0100</pubDate>
+      <guid isPermaLink="false">blog/2018/2018-02-10-new_jbake.html</guid>
+      	<description>
+	&lt;h3&gt;Jbake 1.1.1&lt;/h3&gt;
+&lt;p&gt;Un petit point sur la mise à jour de thème &lt;a href=&quot;https://github.com/tisseurdetoile/jbake-uno&quot;&gt;jbake-uno&lt;/a&gt;.&lt;br /&gt;
+qui propulse ce site et est maintenu par votre serviteur.&lt;/p&gt;
+&lt;h3&gt;Les Nouveautés&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;le support de l&apos;integration continue avec &lt;a href=&quot;http://www.travisci.org&quot;&gt;travisCI.org&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;c.f. le &lt;a href=&quot;/blog/2017/2017-11-03-jbake_git_travis.html&quot;&gt;post suivant&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;l&apos;ajout du temps de lecture d&apos;un article avec &lt;a href=&quot;https://github.com/michael-lynch/reading-time&quot;&gt;readingTime&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;une page de recherche (essentiellement les tags) &lt;a href=&quot;/search.html&quot;&gt;ici&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;la possibilité de définir l&apos;id du body&lt;/li&gt;
+&lt;li&gt;des corrections mineurs&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Installation&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;recuperer/installer &lt;a href=&quot;http://jbake.org/docs/2.5.1/#installation&quot;&gt;jbake&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;sur osx &lt;code&gt;brew update jbake&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;fourcher le repository sur gitHub.&lt;/li&gt;
+&lt;li&gt;le cloner sur votre poste
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;git clone git@github.com:__yourGithubName__/jbake-uno.git&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;garder le lien avec le repository d&apos;origin
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;git remote add upstream git@github.com:tisseurdetoile/jbake-uno.git&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git fetch upstream&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;editer jbake.properties&lt;/li&gt;
+&lt;li&gt;ajouter des billets de blog.&lt;/li&gt;
+&lt;li&gt;faire vos commit
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;git commit - m &amp;quot;mon message&amp;quot;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;tester sur votre poste
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;jbake -b -s&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;faire le lien avec travisCI&lt;/li&gt;
+&lt;li&gt;pousser vos changement
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;git push&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;mise à jour&lt;/h3&gt;
+&lt;p&gt;Pour recupérer les changements fait par l&apos;origine du thème.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;git fetch upstream&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git rebase upstream/master&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;faire les mergetool et finir le rebase.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;tester sur votre poste
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;jbake -b -s&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;pousser vos changement
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;git push&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+	</description>
+    </item>
+    <item>
+      <title>Mon équipement 2018</title>
+      <link>http://www.tisseurdetoile.net/blog/2018/2018-01-24-equipement.html</link>
+      <pubDate>mer., 24 janv. 2018 00:00:00 +0100</pubDate>
+      <guid isPermaLink="false">blog/2018/2018-01-24-equipement.html</guid>
+      	<description>
+	&lt;h3&gt;Quoi de neuf&lt;/h3&gt;
+&lt;p&gt;Cette année plusieurs changement pour le vélotaff comme il n&apos;est plus nécéssaire d&apos;emmener &amp;quot;mini moi&amp;quot; à la crèche mon vélotaff n&apos;est plus mon GIANT (qui devient un velofamille) mais mon ancien vélo de route après un petit tuning. Mon anniversaire à pour sa part apporté un nouveau vélo de route soit un Specialized SEQUOIA.&lt;/p&gt;
+&lt;p&gt;Ce qui m&apos;a déçus :&lt;br /&gt;
+* la lampe DING au concept toujours intéressant a cassé lamentablement (un problème de conception) malgré plusieurs courriel le SAV reste injoignable.&lt;/p&gt;
+&lt;h3&gt;Les Vélos&lt;/h3&gt;
+&lt;h4&gt;VéloTaff Giant Cannondale quick speed 4 (Custom)&lt;/h4&gt;
+&lt;p&gt;Plus leger plus rapide, le travail n&apos;attend pas.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Éclairage &lt;a href=&quot;http://seesense.cc/features/&quot;&gt;SeeSense Icon+&lt;/a&gt; (trouvé sur kickstarer)* Pédales time attac&lt;/li&gt;
+&lt;li&gt;Casque Specialized&lt;/li&gt;
+&lt;li&gt;Chaussures Decathlon&lt;/li&gt;
+&lt;li&gt;Capteur vitesse cadence Garmin&lt;/li&gt;
+&lt;li&gt;Sacoche Ortlieb QL3.1 (top)&lt;/li&gt;
+&lt;li&gt;Sac à dos Osprey Momentum 22&lt;/li&gt;
+&lt;li&gt;Garmin Edge 510 (très utile pour l&apos;&lt;a href=&quot;http://droit-finances.commentcamarche.net/faq/48971-indemnite-kilometrique-velo-mode-d-emploi&quot;&gt;IKV&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;VéloFamille Giant ROAM 1 Disc&lt;/h4&gt;
+&lt;p&gt;Robuste à souhait, un cadre vtt équipé en VTC pour du velofamille fiable.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Éclairage &lt;a href=&quot;http://seesense.cc/features/&quot;&gt;SeeSense Icon+&lt;/a&gt; (trouvé sur kickstarer)&lt;/li&gt;
+&lt;li&gt;Casque Specialized&lt;/li&gt;
+&lt;li&gt;Chaussures Decathlon&lt;/li&gt;
+&lt;li&gt;Pédales time attac&lt;/li&gt;
+&lt;li&gt;Sacoche Ortlieb QL3.1&lt;/li&gt;
+&lt;li&gt;Charrette à enfants Croozer kid for two.&lt;/li&gt;
+&lt;li&gt;Garmin Edge 500&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Vélo route Specialized SEQUOIA&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Casque Specialized&lt;/li&gt;
+&lt;li&gt;Pédales time attac&lt;/li&gt;
+&lt;li&gt;Chaussures Specialized&lt;/li&gt;
+&lt;li&gt;Sac à dos Osprey Viper 10&lt;/li&gt;
+&lt;li&gt;Garmin Edge 810&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Vélo VTT Trek 4300&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Casque giro transfer&lt;/li&gt;
+&lt;li&gt;Pédales time Z-Strong&lt;/li&gt;
+&lt;li&gt;Chaussures Sidi Logo&lt;/li&gt;
+&lt;li&gt;Capteur vitesse cadence Garmin GSC10&lt;/li&gt;
+&lt;li&gt;Sac à dos Osprey Viper 10&lt;/li&gt;
+&lt;li&gt;Garmin Edge 810&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Running&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Montre GPS Garmin Fenix5&lt;/li&gt;
+&lt;li&gt;Ceinture cardio HRM Run&lt;/li&gt;
+&lt;li&gt;Appareil photo Olympus Tough TG-4?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Natation&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Montre Garmin Fenix5&lt;/li&gt;
+&lt;li&gt;Lunettes Speedo Merit&lt;/li&gt;
+&lt;li&gt;pullBuoy Decathlon&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Divers Etc&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Appareil photo Sony RX100 MKI&lt;/li&gt;
+&lt;li&gt;Video Rollei s-50 Wifi&lt;/li&gt;
+&lt;li&gt;Mon profil &lt;a href=&quot;http://connect.garmin.com/profile/tisseurdetoile&quot;&gt;garminConnect&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+	</description>
+    </item>
+    <item>
+      <title>Pour un blog static facile avec JBAKE + GIT + TRAVISCI</title>
+      <link>http://www.tisseurdetoile.net/blog/2017/2017-11-03-jbake_git_travis.html</link>
+      <pubDate>ven., 3 nov. 2017 00:00:00 +0100</pubDate>
+      <guid isPermaLink="false">blog/2017/2017-11-03-jbake_git_travis.html</guid>
+      	<description>
+	&lt;p&gt;Un blog statique c&apos;est cool, moins de problème de sécurité, une vitesse de rendu sans pareil, n&apos;importe qu&apos;elle hebergeur peux faire l&apos;affaire. Mais c&apos;est aussi dire bonjour à une mise plus fastidieuse à coup de ftp. Pour rendre tout cela fluide le triptyque JBake + Git + TravisCi est une des solution.&lt;/p&gt;
+&lt;h2&gt;Ce qu&apos;il faut&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Un repository GIT publique. (comme &lt;a href=&quot;https://github.com/tisseurdetoile/jbake-uno&quot;&gt;https://github.com/tisseurdetoile/jbake-uno&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Les identifiants FTP de votre site web ainsi que le chemin attendus des fichiers.&lt;/li&gt;
+&lt;li&gt;configurer travisCI&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Comment faire&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;forker mon template jbake-uno&lt;br /&gt;
+&lt;img src=&quot;https://framapic.org/CbHEY7VEW1rO/FusAcIV23yGM.png&quot; alt=&quot;travisCi Environnement variable&quot; /&gt;&lt;/li&gt;
+&lt;li&gt;cloner ce nouveau repository sur votre poste
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;git clone git@github.com:&amp;lt;yourName&amp;gt;/jbake-uno.git&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;commencer à écrire votre blog
+&lt;ul&gt;
+&lt;li&gt;modifier jbake.properties pour le configurer à vos besoin.&lt;/li&gt;
+&lt;li&gt;créer/editer les fichier dans content/blog/YYYY/YYYY-MM-JJ-name.md&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;faite vos tests
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;jbake -b&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;jbake -s&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;configurer travisCI&lt;br /&gt;
+&lt;img src=&quot;https://framapic.org/jDO2lNuVVUn0/J6yhAIdTbQBv.png&quot; alt=&quot;travisCi Environnement variable&quot; /&gt;
+&lt;ul&gt;
+&lt;li&gt;HOST contient le nom de l&apos;hôte ftp&lt;/li&gt;
+&lt;li&gt;USER contient le nom de l&apos;utilisateur ftp&lt;/li&gt;
+&lt;li&gt;PASS contient le mot de passe de l&apos;utilisateur ftp&lt;/li&gt;
+&lt;li&gt;SITE_PATH contient le chemin depuis la racine ou uploader les fichiers&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&amp;quot;comiter&amp;quot; sur master
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;git add content/blog/&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git commit -m &amp;quot;message&amp;quot;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git push&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;surveiller le build travisCI&lt;/li&gt;
+&lt;li&gt;regarder sur votre site web&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;S&apos;inspirer&lt;/h2&gt;
+&lt;p&gt;vous pouvez regarder le fichier .travis.yml pour la configuration de travisCi et aussi le fichier scripts/travis_build&lt;/p&gt;
+
+	</description>
+    </item>
+    <item>
+      <title>Mon équipement 2017</title>
+      <link>http://www.tisseurdetoile.net/blog/2017/2017-01-09-equipement.html</link>
+      <pubDate>lun., 9 janv. 2017 00:00:00 +0100</pubDate>
+      <guid isPermaLink="false">blog/2017/2017-01-09-equipement.html</guid>
+      	<description>
+	&lt;h3&gt;Quoi de neuf&lt;/h3&gt;
+&lt;p&gt;Cette année je continue les changements coté éclairage avec le financement d&apos;une lampe DING sur kickstater (reçu il y quelques mois). Cette lampe à pour particularité d&apos;éclairer à la fois en avant (normal) mais aussi en dessous. Cette éclairage vers le bas permet d&apos;être plus visible au niveau des intersections et marque aussi votre position sur le coté en vous entourant d&apos;un halo qui s&apos;avère être très rassurant.&lt;/p&gt;
+&lt;p&gt;Un éclairage essentiellement sur batterie et plus à dynamo, ce qui ne pose pas vraiment problème car les équipements indiquent facilement l&apos;état de la batterie et permettent donc d&apos;anticipé la panne sèche.&lt;/p&gt;
+&lt;h3&gt;Les Vélos&lt;/h3&gt;
+&lt;h4&gt;VéloTaff Giant ROAM 1 Disc&lt;/h4&gt;
+&lt;p&gt;Robuste à souhait, un cadre vtt équipé en VTC pour du vélotaff fiable.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Éclairage &lt;a href=&quot;http://seesense.cc/features/&quot;&gt;SeeSense Icon+&lt;/a&gt; (trouvé sur kickstarer)&lt;/li&gt;
+&lt;li&gt;Éclairage &lt;a href=&quot;https://dinglights.com/&quot;&gt;DING FlashLight&lt;/a&gt; (trouvé sur kickstarer)&lt;/li&gt;
+&lt;li&gt;Casque Giro&lt;/li&gt;
+&lt;li&gt;Pédales time attac&lt;/li&gt;
+&lt;li&gt;Chaussures Sidi Logo XC&lt;/li&gt;
+&lt;li&gt;Sacoche Mainstream MSX SL 55 Classic&lt;/li&gt;
+&lt;li&gt;Sacoche Vaude 10918 Aqua&lt;/li&gt;
+&lt;li&gt;Sac à dos Osprey Momentum 22&lt;/li&gt;
+&lt;li&gt;Charrette à enfants Croozer kid for two.&lt;/li&gt;
+&lt;li&gt;Garmin Edge 510 (très utile pour l&apos;&lt;a href=&quot;http://droit-finances.commentcamarche.net/faq/48971-indemnite-kilometrique-velo-mode-d-emploi&quot;&gt;IKV&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Vélo route Cannondale quick speed 4&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Casque giro transfer&lt;/li&gt;
+&lt;li&gt;Pédales time attac&lt;/li&gt;
+&lt;li&gt;Chaussures Sidi Log&lt;/li&gt;
+&lt;li&gt;Capteur vitesse cadence Garmin GSC10&lt;/li&gt;
+&lt;li&gt;Sac à dos Osprey Viper 10&lt;/li&gt;
+&lt;li&gt;Garmin Edge 810&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Vélo VTT Trek 4300&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Casque giro transfer&lt;/li&gt;
+&lt;li&gt;Pédales time Z-Strong&lt;/li&gt;
+&lt;li&gt;Chaussures Sidi Logo&lt;/li&gt;
+&lt;li&gt;Capteur vitesse cadence Garmin GSC10&lt;/li&gt;
+&lt;li&gt;Sac à dos Osprey Viper 10&lt;/li&gt;
+&lt;li&gt;Garmin Edge 810&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Running&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Montre GPS Garmin Fenix3&lt;/li&gt;
+&lt;li&gt;Ceinture cardio HRM Run&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Natation&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Montre Garmin Fenix3&lt;/li&gt;
+&lt;li&gt;Lunettes Speedo Merit&lt;/li&gt;
+&lt;li&gt;pullBuoy Decathlon&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Divers Etc&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Appareil photo Sony RX100 MKI&lt;/li&gt;
+&lt;li&gt;Video Rollei s-50 Wifi&lt;/li&gt;
+&lt;li&gt;Mon profil &lt;a href=&quot;http://connect.garmin.com/profile/tisseurdetoile&quot;&gt;garminConnect&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+	</description>
+    </item>
+    <item>
+      <title>ISCSI root avec un raspberry PI.</title>
+      <link>http://www.tisseurdetoile.net/blog/2016/2016-07-12-raspberrypi-iscsi.html</link>
+      <pubDate>mar., 12 juil. 2016 00:00:00 +0200</pubDate>
+      <guid isPermaLink="false">blog/2016/2016-07-12-raspberrypi-iscsi.html</guid>
+      	<description>
+	&lt;p&gt;Pour palier au problème d&apos;usure des cartes SD j&apos;utilisais &lt;a href=&quot;http://www.berryterminal.com/doku.php/berryboot&quot;&gt;berryBoot&lt;/a&gt; pour installer linux sur un LUN iscsi. Mais cette solution quoi que pratique ne supporte pas très bien les mises à jour du noyau. Depuis quelques temps raspbian supporte de façon native le iscsi. voici comment installer raspbian avec iscsi.&lt;/p&gt;
+&lt;h2&gt;Informations&lt;/h2&gt;
+&lt;h3&gt;Configuration&lt;/h3&gt;
+&lt;p&gt;Client : Raspberry PI2 / Raspbian jessy lite V4.4 / 2016-05-27 sur Sdcard 4Go Samsung&lt;br /&gt;
+Serveur iscsi : QNAP TS-131 / adresse ip 192.168.0.10&lt;br /&gt;
+Box Internet : serveur DHCP&lt;/p&gt;
+&lt;h3&gt;Prérequis&lt;/h3&gt;
+&lt;p&gt;La machine cliente sera l&apos;initiateur et devra avoir un nom d&apos;initiateur icsci dont le format est le suivant iqn.yyyy-mm.naming-authority:unique il doit être unique sur le réseau. dans cet exemple le nom sera iqn.2012-07.org.raspbian:raspberry:local.home.raspbian. Le nom de la cible sera définis au niveau du NAS dans cette exemple se sera iqn.2004-04.com.qnap:ts-131:iscsi.raspbian.e65bfb.&lt;/p&gt;
+&lt;h2&gt;Installation&lt;/h2&gt;
+&lt;h3&gt;Préparer le disque iscsi&lt;/h3&gt;
+&lt;p&gt;Il suffit de créer une cible(target) iscsi avec son volume (LUN) en suivant la&lt;br /&gt;
+&lt;a href=&quot;https://www.qnap.com/i/en/tutorial/con_show.php?op=showone&amp;amp;cid=29&quot;&gt;Documentation QNAP&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;Installer raspbian lite&lt;/h3&gt;
+&lt;p&gt;J&apos;utilise une raspbian lite disponible &lt;a href=&quot;https://www.raspberrypi.org/downloads/raspbian/&quot;&gt;ici&lt;/a&gt; documentation d&apos;installation &lt;a href=&quot;https://www.raspberrypi.org/documentation/installation/installing-images/README.md&quot;&gt;là&lt;/a&gt;&lt;br /&gt;
+Mettre la sdcard dans le raspberry pi et mettez le sous tension.&lt;br /&gt;
+connecter vous avec l&apos;utilisateur pi mot de passe raspberry&lt;br /&gt;
+exécuter les commandes suivantes :&lt;br /&gt;
+1. &lt;code&gt;sudo aptitude update&lt;/code&gt;&lt;br /&gt;
+2. &lt;code&gt;sudo aptitude upgrade&lt;/code&gt;&lt;br /&gt;
+3. &lt;code&gt;sudo aptitude install rsync open-iscsi&lt;/code&gt;&lt;br /&gt;
+4. &lt;code&gt;sudo reboot&lt;/code&gt;&lt;/p&gt;
+&lt;h3&gt;Finaliser l&apos;installation iscsi&lt;/h3&gt;
+&lt;p&gt;reconnecter vous avec l&apos;utilisateur pi&lt;br /&gt;
+1. &lt;code&gt;sudo nano /etc/iscsi/initiatorname.iscsi&lt;/code&gt; mettre la valeur iqn.2012-07.org.raspbian:raspberry:local.home.raspbian&lt;br /&gt;
+2. &lt;code&gt;sudo /etc/init.d/open-iscsi start&lt;/code&gt;&lt;br /&gt;
+3. &lt;code&gt;sudo systemctl daemon-reload&lt;/code&gt;&lt;br /&gt;
+4. &lt;code&gt;sudo iscsiadm --mode discovery --type sendtargets --portal 192.168.0.10:3260&lt;/code&gt;&lt;br /&gt;
+résultat : 192.168.0.10:3260,1 iqn.2004-04.com.qnap:ts-131:iscsi.raspbian.e65bfb&lt;br /&gt;
+5. &lt;code&gt;sudo iscsiadm -m node --targetname &amp;quot;iqn.2004-04.com.qnap:ts-131:iscsi.raspbian.e65bfb&amp;quot; --portal &amp;quot;192.168.0.10:3260&amp;quot; --login&lt;/code&gt;&lt;br /&gt;
+6. &lt;code&gt;sudo mkfs.ext4 -m0 /dev/sda&lt;/code&gt;&lt;br /&gt;
+7. &lt;code&gt;sudo mkdir /mnt/iscsi &amp;amp;&amp;amp; sudo mount /dev/sda /mnt/iscsi&lt;/code&gt;&lt;br /&gt;
+8. &lt;code&gt;sudo rsync -avhP --exclude /boot --exclude /proc --exclude /sys --exclude /mnt / /mnt/iscsi/&lt;/code&gt;&lt;br /&gt;
+9. &lt;code&gt;sudo mkdir /mnt/iscsi/{proc,sys,boot,initrd,mnt}&lt;/code&gt;&lt;br /&gt;
+10. &lt;code&gt;sudo touch /etc/iscsi/iscsi.initramfs&lt;/code&gt;  (nécessaire à update-initramfs)&lt;br /&gt;
+11. &lt;code&gt;sudo touch /mnt/iscsi/etc/iscsi/iscsi.initramfs&lt;/code&gt;&lt;br /&gt;
+12. &lt;code&gt;sudo update-initramfs -c -k `uname -r`&lt;/code&gt;&lt;br /&gt;
+résultat : update-initramfs: Generating /boot/initrd.img-4.4.13-v7&lt;br /&gt;
+13. &lt;code&gt;sudo cp /boot/kernel7.img /boot/kernel7-4.4.13-v7+.img&lt;/code&gt;&lt;br /&gt;
+14. &lt;code&gt;sudo nano /boot/config.txt&lt;/code&gt;&lt;br /&gt;
+ajouter :&lt;br /&gt;
+kernel=kernel7-4.4.13-v7+.img&lt;br /&gt;
+initramfs initrd.img-4.4.13-v7+ followkernel&lt;br /&gt;
+15. &lt;code&gt;sudo blkid /dev/sda&lt;/code&gt;&lt;br /&gt;
+résultat : /dev/sda: UUID=&amp;quot;b042d66d-ead3-4742-953a-61e2bf162aaf&amp;quot; TYPE=&amp;quot;ext4&amp;quot;&lt;br /&gt;
+16. &lt;code&gt;sudo nano /boot/cmdline.txt&lt;/code&gt;&lt;br /&gt;
+ip=::::raspberrypi:eth0:dhcp ISCSI_INITIATOR=iqn.2012-07.org.raspbian:raspberry:local.home.raspbian ISCSI_TARGET_NAME=iqn.2004-04.com.qnap:ts-131:iscsi.raspbian.e65bfb ISCSI_TARGET_IP=192.168.0.10 ISCSI_TARGET_PORT=3260 dwc_otg.lpm_enable=0 console=serial0,115200 console=tty1 root=UUID=b042d66d-ead3-4742-953a-61e2bf162aaf rootfstype=ext4 elevator=deadline fsck.repair=yes rootwait&lt;/p&gt;
+&lt;h4&gt;Nota&lt;/h4&gt;
+&lt;p&gt;Les étapes 7, 8 et 9 permettent de copier l&apos;installation vers le fileSystem iscsi.&lt;br /&gt;
+Les étapes 10,11,12 et 13 assure que le noyau et les modules ne changent pas après une mise à jour.&lt;br /&gt;
+L&apos;étape 15 configure la connexion vers la cible iscsi.&lt;/p&gt;
+&lt;h3&gt;Conclusion&lt;/h3&gt;
+&lt;p&gt;voilà vous n&apos;avez plus qu&apos;a faire rebooter, vous verrez votre pi récupérer une adresse ip puis monter le disque iscsi et continuer le démarrage.&lt;br /&gt;
+Vous pouvez donc cloner une installation complète comme ceci :&lt;br /&gt;
+- sauvegarder le LUN de cette installation, le copier vers un nouveau LUN associé à une nouvelle cible&lt;br /&gt;
+- copier le contenu de la sdcard sur une nouvelle éditer le fichier /boot/cmdline.txt&lt;br /&gt;
+- changer les paramètres suivant pour qu&apos;il corresponde à cette nouvelle cible n&apos;oublier pas de changer le nom de l&apos;initiateur :&lt;br /&gt;
+ISCSI_INITIATOR=iqn.2012-07.org.raspbian:raspberry:local.home.raspbian ISCSI_TARGET_NAME=iqn.2004-04.com.qnap:ts-131:iscsi.raspbian.e65bfb ISCSI_TARGET_IP=192.168.0.10 ISCSI_TARGET_PORT=3260&lt;/p&gt;
+&lt;h2&gt;Bibliographie :&lt;/h2&gt;
+&lt;p&gt;source :&lt;br /&gt;
+1. &lt;a href=&quot;https://www.reddit.com/r/raspberry_pi/comments/49l25b/iscsi_booting_your_raspberry_pi/&quot;&gt;https://www.reddit.com/r/raspberry_pi/comments/49l25b/iscsi_booting_your_raspberry_pi/&lt;/a&gt;&lt;br /&gt;
+2. &lt;a href=&quot;https://www.raspberrypi.org/forums/viewtopic.php?f=29&amp;amp;t=151302&quot;&gt;https://www.raspberrypi.org/forums/viewtopic.php?f=29&amp;amp;t=151302&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Changelog&lt;/h2&gt;
+&lt;p&gt;2016-07-14 : correction de coquille dans les commandes.&lt;/p&gt;
+
+	</description>
+    </item>
+    <item>
+      <title>Domoticz Script lua Heure Creuse / Heure Pleine</title>
+      <link>http://www.tisseurdetoile.net/blog/2016/2016-02-24-scripts_domoticz.html</link>
+      <pubDate>mer., 24 févr. 2016 00:00:00 +0100</pubDate>
+      <guid isPermaLink="false">blog/2016/2016-02-24-scripts_domoticz.html</guid>
+      	<description>
+	
+&lt;p&gt;Voici un script en lua pour domoticz qui permet de ventiler dans deux compteurs différent la consomation heure
+	creuse et heure pleine de votre consomation éléctrique.&lt;/p&gt;
+
+&lt;h2&gt;Préambule&lt;/h2&gt;
+
+&lt;p&gt;Pour ce script il vous faut une installation &lt;a href=&apos;https://domoticz.com/&apos;&gt;domoticz&lt;/a&gt; fonctionnelle, un compteur
+	de consomation OWL comme le CM180.&lt;/p&gt;
+
+&lt;p&gt;Créer/Avoir dans domoticz&lt;/p&gt;
+&lt;ul&gt;
+	&lt;li&gt;le compteur pricipal (owl) ici CONSO&lt;/li&gt;
+	&lt;li&gt;Trois variable utilisateurs :&lt;/li&gt;
+	&lt;ol&gt;
+		&lt;li&gt;CONSO_LAST_HP&lt;/li&gt;
+		&lt;li&gt;CONSO_LAST_HC&lt;/li&gt;
+		&lt;li&gt;CONSO_LAST&lt;/li&gt;
+	&lt;/ol&gt;
+	&lt;li&gt;Deux compteurs :&lt;/li&gt;
+	&lt;ol&gt;
+		&lt;li&gt;CONSO_HP (noter l&apos;index ici idx=57)&lt;/li&gt;
+		&lt;li&gt;CONSO_HC (noter l&apos;index ici idx=59)&lt;/li&gt;
+	&lt;/ol&gt;
+	&lt;li&gt;Un interupteur HC/HP programmer avec un planning (l&apos;interupteur est à ON pendant les heure creuse)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;Le script&lt;/h2&gt;
+&lt;p&gt;Il est inspiré de celui disponnibe sur le forum domoticz &lt;a href=&apos;http://easydomoticz.com/forum/viewtopic.php?t=365&apos;&gt;ici&lt;/a&gt;.
+	Copier le script suivant, dans le repertoire /home/pi/domoticz/scripts/lua/&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/tisseurdetoile/f06509b67eadb2996b2a.js&quot;&gt;&lt;/script&gt;
+
+	</description>
+    </item>
+    <item>
+      <title>OSx a cassé mon jekyll je passe sur jbake</title>
+      <link>http://www.tisseurdetoile.net/blog/2016/2016-02-16-jbake-uno.html</link>
+      <pubDate>mar., 16 févr. 2016 00:00:00 +0100</pubDate>
+      <guid isPermaLink="false">blog/2016/2016-02-16-jbake-uno.html</guid>
+      	<description>
+	&lt;p&gt;Comme OSX maverick n&apos;apprécie pas trop jekyll (Ruby), un problème presque après chaque mise à jour. J&apos;ai donc essayé plusieurs moteur de blog statique. Et finalement c&apos;est la promesse du &amp;quot;Write once run everywhere&amp;quot; de java et donc de jbake qui m&apos;a séduit.&lt;/p&gt;
+&lt;p&gt;Le thème de base n&apos;est pas des plus attrayant. J&apos;ai donc adapté le thème &lt;a href=&quot;http://jekyllthemes.org/themes/jekyll-uno/&quot;&gt;jekyll-uno&lt;/a&gt; qui est relativement simple. Cette adaptation est &lt;a href=&quot;https://github.com/tisseurdetoile/jbake-uno&quot;&gt;jbake-uno&lt;/a&gt; une démonstration est disponible &lt;a href=&quot;http://www.tisseurdetoile.net/jbake-uno/&quot;&gt;ici&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;mise en place&lt;/h2&gt;
+&lt;h4&gt;Installation de jbake&lt;/h4&gt;
+&lt;p&gt;Installation de jbake &lt;code&gt;brew install jbake&lt;/code&gt;&lt;/p&gt;
+&lt;h4&gt;Récupération du thème&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;Cloner le repo git &lt;code&gt;git clone git@github.com:tisseurdetoile/jbake-uno.git&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Enter dans le répertoire: &lt;code&gt;cd jbake-uno/&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Cuire le thème : &lt;code&gt;jbake -b&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Démarrer le serveur jbake : &lt;code&gt;jbake -s&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4&gt;Commencer à écrire&lt;/h4&gt;
+&lt;p&gt;Il vous suffit de créer des fichiers dans content/blog/YYYY/YYYY-MM-DD_nom-du-fichier.md&lt;br /&gt;
+et c&apos;est partie.&lt;/p&gt;
+&lt;p&gt;Cuire le blog avec  &lt;code&gt;jbake -b&lt;/code&gt;&lt;br /&gt;
+On teste le résultât avec &lt;code&gt;jbake -s&lt;/code&gt;&lt;br /&gt;
+On upload le contenu du répertoire output.&lt;/p&gt;
+
+	</description>
+    </item>
+    <item>
+      <title>Mon equipement 2016</title>
+      <link>http://www.tisseurdetoile.net/blog/2016/2016-02-13-equipements.html</link>
+      <pubDate>sam., 13 févr. 2016 00:00:00 +0100</pubDate>
+      <guid isPermaLink="false">blog/2016/2016-02-13-equipements.html</guid>
+      	<description>
+	&lt;h3&gt;Vélos&lt;/h3&gt;
+&lt;h4&gt;VéloTaff Giant ROAM 1 Disc&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Éclairage &lt;a href=&quot;http://seesense.cc/features/&quot;&gt;SeeSense Icon+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Casque Giro&lt;/li&gt;
+&lt;li&gt;Pédales time attac&lt;/li&gt;
+&lt;li&gt;Chaussures Sidi Logo XC&lt;/li&gt;
+&lt;li&gt;Sacoches  Mainstream MSX SL 55 Classic&lt;/li&gt;
+&lt;li&gt;Sac à dos Osprey Momentum 22&lt;/li&gt;
+&lt;li&gt;Charette à enfants Croozer kid for two.&lt;/li&gt;
+&lt;li&gt;Garmin Edge 510&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Vélo route Cannondale quick speed 4&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Casque giro transfer&lt;/li&gt;
+&lt;li&gt;Pédales time attac&lt;/li&gt;
+&lt;li&gt;Chaussures Sidi Log&lt;/li&gt;
+&lt;li&gt;Capteur vitesse cadence Garmin GSC10&lt;/li&gt;
+&lt;li&gt;Sac à dos Osprey Viper 10&lt;/li&gt;
+&lt;li&gt;Garmin Edge 810&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Vélo VTT Trek 4300&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Casque giro transfer&lt;/li&gt;
+&lt;li&gt;Pédales time Z-Strong&lt;/li&gt;
+&lt;li&gt;Chaussures Sidi Logo&lt;/li&gt;
+&lt;li&gt;Capteur vitesse cadence Garmin GSC10&lt;/li&gt;
+&lt;li&gt;Sac à dos Osprey Viper 10&lt;/li&gt;
+&lt;li&gt;Garmin Edge 810&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Running&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Montre GPS Garmin Fenix3&lt;/li&gt;
+&lt;li&gt;Ceinture cardio HRM Run&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Natation&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Montre Garmin Fenix3&lt;/li&gt;
+&lt;li&gt;pullBuoy Decathlon&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Divers Etc&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Appareil photo Sony RX100 MKI&lt;/li&gt;
+&lt;li&gt;Video Rollei s-50 Wifi&lt;/li&gt;
+&lt;li&gt;Mon profil &lt;a href=&quot;http://connect.garmin.com/profile/tisseurdetoile&quot;&gt;garminConnect&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+	</description>
+    </item>
+    <item>
+      <title>Balade réel et web II</title>
+      <link>http://www.tisseurdetoile.net/blog/2015/2015-05-29-balade+reel+et+web+II.html</link>
+      <pubDate>ven., 29 mai 2015 00:00:00 +0200</pubDate>
+      <guid isPermaLink="false">blog/2015/2015-05-29-balade+reel+et+web+II.html</guid>
+      	<description>
+	&lt;h1&gt;Web&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Une discution forte intéressante sur les livre qu&apos;un developpeur doit avoir lù à donc à lire &lt;a href=&quot;https://forum.humancoders.com/t/les-livres-que-tout-developpeur-doit-lire/45&quot;&gt;ici&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Un autre point de sur la magie des outils 2.0 dans le monde merveilleux du management &lt;a href=&quot;http://souriez.info/Les-dessous-du-management&quot;&gt;ici&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Droits d&apos;auteur&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Pourquoi le petit prince est rentré dans le domaine public partout sauf en france &lt;a href=&quot;http://www.liberation.fr/culture/2015/06/03/pourquoi-saint-exupery-est-il-tombe-dans-le-domaine-public-partout-sauf-en-france_1322085&quot;&gt;là&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;En vélo&lt;/h2&gt;
+&lt;p&gt;L&apos;&lt;a href=&quot;https://www.cpr.org/news/story/some-cyclists-obey-laws-some-dont-cu-denver-researcher-wants-know-why&quot;&gt;interview&lt;/a&gt; en anglais de &lt;a href=&quot;http://wesmars.wix.com/wesleymarshall&quot;&gt;wesley marshall&lt;/a&gt; qui s&apos;intéroge sur le resultat d&apos;un sondage sur le thème &amp;quot;wy do some cyclist break law ?&amp;quot; pourquoi les cyclistes ne respectent ils pas là loi ? On retiendra en autre&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;quot;Everyone breaks traffic laws, Marshall said. 
+It&apos;s just that cyclists are judged more harshly.&amp;quot;
+
+&amp;quot;Tout le monde ne respectent pas les règle de conduite.
+C&apos;est juste que les cyclistes sont jugés plus sévèrement.&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Le resultât de l&apos;étude sera disponnible courant de cet été.&lt;/p&gt;
+
+	</description>
+    </item>
+    <item>
+      <title>Prise en charge d&apos;un onduleur avec QNAP et raspbery PI</title>
+      <link>http://www.tisseurdetoile.net/blog/2015/2015-04-23-nut-sur-qnap-et-raspberrypi.html</link>
+      <pubDate>jeu., 23 avr. 2015 00:00:00 +0200</pubDate>
+      <guid isPermaLink="false">blog/2015/2015-04-23-nut-sur-qnap-et-raspberrypi.html</guid>
+      	<description>
+	&lt;h2&gt;Préambule&lt;/h2&gt;
+&lt;p&gt;Avec plusieur raspberry pi, un NAS QNAP 219 le tout branché sur un onduler APC 500&lt;br /&gt;
+voilà une bonne raison pour installer la gestion en réseau de l&apos;onduleur avec NUT.&lt;br /&gt;
+A noter que le NAS ne peut être le poste Serveur Nut, car il n&apos;est pas constament allumé.&lt;/p&gt;
+&lt;p&gt;Le serveur Nut est un raspberryPi avec pour ip 192.168.0.9&lt;/p&gt;
+&lt;h2&gt;Installation du serveur&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;# sudo apt-get install nut
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;Detection de l&apos;onduleur&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;# lsub
+Bus 001 Device 004: ID 051d:0002 American Power Conversion Uninterruptible Power Supply
+# dmesg  | grep UPS 
+usb 1-1.3: Product: Back-UPS CS 500 FW:808.q10 .I USB FW:q10 
+hid-generic 0003:051D:0002.0001: hiddev0,hidraw0: USB HID v1.10 ...
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;L&apos;onduleur est accèsible dans hidraw0&lt;/p&gt;
+&lt;h3&gt;/etc/udev/rules.d/99_nut-serialups.rules&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;# sudo nano /etc/udev/rules.d/99_nut-serialups.rules
+
+KERNEL==&amp;quot;hidraw0&amp;quot;, GROUP=&amp;quot;nut&amp;quot;
+
+# sudo udevadm trigger
+# sudo udevadm control --reload-rules
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;nut.conf&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;# sudo nano /etc/nut/nut.conf
+
+MODE=netserver
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;ups.conf&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;# sudo nano /etc/nut/nut.conf
+
+[qnapups]
+	driver = usbhid-ups
+	port = /dev/hidraw0
+	desc = &amp;quot;Server&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;upsd.conf&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;#sudo nano /etc/nut/nut.conf
+
+LISTEN 127.0.0.1
+LISTEN 192.168.0.9
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;configuration des utilisateurs&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;# sudo nano /etc/nut/upsd.user
+
+[nut]
+password = nut
+allowfrom = localhost lan
+upsmon master
+actions = SET
+instcmds = ALL
+
+[admin]
+password = 123456
+allowfrom = localhost lan
+actions = SET
+instcmds = ALL
+upsmon slave           # or upsmon slave
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;/etc/nut/upsmon.conf&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;# sudo nano /etc/nut/upsmon.conf
+
+MONITOR qnapups@localhost 1 nut nut master
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;Configuration des clients&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;sudo apt-get install nut-client
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;nut.conf&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;# sudo nano /etc/nut/nut.conf
+
+MODE=netclient
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;upsmon.conf&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;# sudo nano /etc/nut/nut.conf
+
+MONITOR qnapups@192.168.0.9 1 admin 123456 slave
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;Specificité pour qnap&lt;/h3&gt;
+&lt;p&gt;En regardant la config du NAS Qnap en mode esclave seul l&apos;ip du serveur est configurable. Le reste est stocké en dur. L&apos;onduleur doit être identifié par le nom qnapups, l&apos;utilisateur qui fera les requete est admin avec pour mot de passe 123456. Par defaut d&apos;ailleur admin accede à toute la configuration.&lt;br /&gt;
+Pour configurer l&apos;onduleur sur le NAS : aller dans Dispositif Externe &amp;gt; UPS / ASI&lt;br /&gt;
+Choisissez dispositif externe et specifier l&apos;adresse du serveur ici 192.168.0.9&lt;/p&gt;
+&lt;h2&gt;bonus suivie des données dans domoticz&lt;/h2&gt;
+&lt;p&gt;Ayant un raspberryPi faisant tournée domoticz il me parraissait pertinent de recuperer les informations&lt;br /&gt;
+de l&apos;onduleur charge, niveau de batterie et temperature pour les afficher dans domoticz.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;tout d&apos;abord il faut creer trois capteur virtuel et noter leur ID
+&lt;ul&gt;
+&lt;li&gt;charge en pourcentage&lt;/li&gt;
+&lt;li&gt;niveau de batterie en pourcentage&lt;/li&gt;
+&lt;li&gt;temperature&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;bbliographie&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;http://abakalidis.blogspot.fr/2013/04/using-raspberry-pi-as-ups-server-with.html&quot;&gt;http://abakalidis.blogspot.fr/2013/04/using-raspberry-pi-as-ups-server-with.html&lt;/a&gt;&lt;/p&gt;
+
+	</description>
+    </item>
+    <item>
+      <title>Installer un serveur GIT avec LinuxDeploy Debian</title>
+      <link>http://www.tisseurdetoile.net/blog/2015/2015-04-08-un-serveur-git-sur-son-smartphone.html</link>
+      <pubDate>mer., 8 avr. 2015 00:00:00 +0200</pubDate>
+      <guid isPermaLink="false">blog/2015/2015-04-08-un-serveur-git-sur-son-smartphone.html</guid>
+      	<description>
+	&lt;p&gt;Après avoir installer LinuxDeploy sur son téléphone android comme vu dans le precedent [billet]({{ site.url }}/articles/Transformer-son-telephone-android-en-miniserver),&lt;br /&gt;
+nous allons installer git et le configurer pour heberger nos developpement. Dans cette exemple deux utilisateurs seront créer git et gitadmin.&lt;br /&gt;
+Git est l&apos;utilisateur standard, pour utiliser les dépots. Gitadmin permet d&apos;administrer les dépots.&lt;/p&gt;
+&lt;h2&gt;Installation&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;sudo aptitude install git
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;Ajout des utilisateurs et groupe&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;sudo groupadd gitusers
+sudo useradd -g gitusers -s /usr/bin/git-shell git
+sudo useradd -g gitusers -s /usr/bin/git-shell gitadmin
+sudo mkdir /opt/git/
+sudo chown gitadmin:gitusers /opt/git/
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;git-shell-command&lt;/h3&gt;
+&lt;p&gt;Pour securiser le shell les utilisateurs git et gitadmin utilise git-shell.&lt;br /&gt;
+Ce shell permet de limiter les actions à celle definis dans le repertoire git-shell-commands.&lt;br /&gt;
+Dans cette exemple les commande disponnible permettent d&apos;ajouter des clef ssh, de créer un repository de lister les repository existant.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;sudo git clone https://gist.github.com/fad3b78b359153bd36c9.git /opt/git/git-shell-commands
+sudo chown -R gitadmin:gitusers /opt/git/git-shell-commands/
+sudo chmod -R +x /opt/git/git-shell-commands
+sudo ln -s /opt/git/git-shell-commands /home/git/git-shell-commands
+sudo ln -s /opt/git/git-shell-commands /home/gitadmin/git-shell-commands
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;Fichiers git-shell&lt;/h2&gt;
+&lt;p&gt;{% gist fad3b78b359153bd36c9 %}&lt;/p&gt;
+
+	</description>
+    </item>
+    <item>
+      <title>Transformer son smartphone en serveur Android/nix</title>
+      <link>http://www.tisseurdetoile.net/blog/2015/2015-04-05-Transformer-son-telephone-android-en-miniserver.html</link>
+      <pubDate>dim., 5 avr. 2015 00:00:00 +0200</pubDate>
+      <guid isPermaLink="false">blog/2015/2015-04-05-Transformer-son-telephone-android-en-miniserver.html</guid>
+      	<description>
+	&lt;p&gt;Parfois il peut s&apos;averer utile d&apos;avoir un mini serveur sur soi pour montrer un prototype de site web ou application web, ou encore avoir un serveur GIT dans la poche.&lt;/p&gt;
+&lt;p&gt;Il est tout à fait possible d&apos;utiliser son &amp;quot;smartphone&amp;quot; pour cela. Un téléphone sous android 2.1 minimum, une sdcard de quelques Giga (en fat un fichier ne peu depasser les 4Go le système est stocké dans un fichier) et une bonne connexion internet, L&apos;application LinuxDeploy et le tour et joué.&lt;br /&gt;
+Linux Deploy n&apos;est pas une solution de virtualisation c&apos;est un chroot du sysème android vers une distribution particulière. Linux Deploy propose pas mal de distribution (Debian, Gentoo, etc ...). Ici j&apos;utiliserais Debian comme distribution de réference.&lt;/p&gt;
+&lt;h2&gt;Installation&lt;/h2&gt;
+&lt;p&gt;Il faut installer &lt;a href=&quot;#.2&quot;&gt;SuperSu&lt;/a&gt; et &lt;a href=&quot;#.1&quot;&gt;LinuxDeploy&lt;/a&gt; sur le téléphone, en demarrant LinuxDeploy vous devez choisir la destination du fichier image &amp;quot;/storage/extSdCard/monimage.img&amp;quot; la distribution le système de fichier et la taille de l&apos;image. Pour ma part j&apos;utilise Other comme &amp;quot;DesktopEnvironnement&amp;quot; car je n&apos;utilise que la console. Revener sur clique sur install pour demarrer l&apos;installation.&lt;/p&gt;
+&lt;h2&gt;Ensuite&lt;/h2&gt;
+&lt;p&gt;Pour quoi pas installer :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;un serveur web (nginx, php, sqlite) à voir bientôt.&lt;/li&gt;
+&lt;li&gt;un serveur git à lire [ici]({{ site.url }}/articles/un-serveur-git-sur-son-smartphone)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Astuce&lt;/h2&gt;
+&lt;p&gt;Si comme moi vous avez commencer à travailler avec une image trop petite 2Go voici l&apos;astuce pour copier les données d&apos;une image fichier à une autre.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;# sudo mkdir /mnt/source
+# sudo mkdir /mnt/destination
+# sudo mount -o loop /tmp/imageorig.img /mnt/source
+# sudo mount -o loop /tmp/imagedest.img /mnt/destination
+# sudo cp -a /mnt/mnt/source/* /mnt/destination
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Le fichier &amp;quot;imagedest.img&amp;quot; contient maintenant les données de &amp;quot;imageorig.img&amp;quot;&lt;/p&gt;
+&lt;h2&gt;Bibliographie&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a id=&quot;.1&quot;&gt;&lt;/a&gt;1. Linux Deploy &lt;a href=&quot;https://play.google.com/store/apps/details?id=ru.meefik.linuxdeploy&amp;amp;hl=fr_FR]&quot;&gt;PlayStore&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a id=&quot;.2&quot;&gt;&lt;/a&gt;2. Linux Deploy &lt;a href=&quot;https://github.com/meefik/linuxdeploy&quot;&gt;GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a id=&quot;.3&quot;&gt;&lt;/a&gt;3. Linux Deploy &lt;a href=&quot;http://meefik.ru/blog/categories/linuxdeploy/&quot;&gt;Blog RU&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a id=&quot;.4&quot;&gt;&lt;/a&gt;4. SuperSu &lt;a href=&quot;https://play.google.com/store/apps/details?id=eu.chainfire.supersu&quot;&gt;PlayStore&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a id=&quot;.5&quot;&gt;&lt;/a&gt;5. Autre tuto sur l&apos;installation de LinuxDeploy chez &lt;a href=&quot;http://korben.info/comment-installer-linux-sur-android.html&quot;&gt;Korben&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+	</description>
+    </item>
+    <item>
+      <title>Balade réel et web</title>
+      <link>http://www.tisseurdetoile.net/blog/2015/2015-05-22-balade+reel+et+web.html</link>
+      <pubDate>dim., 22 févr. 2015 00:00:00 +0100</pubDate>
+      <guid isPermaLink="false">blog/2015/2015-05-22-balade+reel+et+web.html</guid>
+      	<description>
+	&lt;h1&gt;Balade sur le web&lt;/h1&gt;
+&lt;h2&gt;Préocupation&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Chez korben, les assurance connecté le meilleur du pire de la personnalisation des contrât &lt;a href=&quot;http://korben.info/youdrive-drivebox-direct-assurance.html?utm_source=feedburner&amp;amp;utm_medium=feed&amp;amp;utm_campaign=Feed%3A+KorbensBlog-UpgradeYourMind+%28Korben%27s+Blog+-+Upgrade+Your+Mind%29&quot;&gt;ici&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;et ensuite en compareras notre compatibilité ADN en le donnant a quelques mutinationale &lt;a href=&quot;http://affordance.typepad.com//mon_weblog/2015/05/telephone-cellulaire-smartphone-genome.html&quot;&gt;là&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Web et vélo&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;De bonnes lunettes pas cher pour le vélo &lt;a href=&quot;http://road.cc/content/buyers-guide/151573-best-cheap-cycling-sunglasses&quot;&gt;là&lt;/a&gt;. Un petit test de cadenas U &lt;a href=&quot;http://thesweethome.com/reviews/best-bike-lock/&quot;&gt;là&lt;/a&gt;, avec quelques bon conseil  pour attacher son vélo &lt;a href=&quot;http://lifehacker.com/5942301/the-proper-way-to-lock-your-bicycle&quot;&gt;là&lt;/a&gt; et une dévouverte le magazine urban vélo &lt;a href=&quot;http://urbanvelo.org/home/&quot;&gt;là&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Autres&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Les algorithmes expliqués du datamining en anglais &lt;a href=&quot;http://rayli.net/blog/data/top-10-data-mining-algorithms-in-plain-english&quot;&gt;là&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Le poker en ligne en rafle plus la mise &lt;a href=&quot;http://www.lemonde.fr/les-decodeurs/article/2015/05/13/le-poker-en-ligne-bientot-au-tapis_4628824_4355770.html&quot;&gt;ici&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;Balade&lt;/h1&gt;
+&lt;h2&gt;Isère&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;A Luc en Diois : Le claps depard piscine municipale la trace &lt;a href=&quot;https://connect.garmin.com/modern/activity/763128708&quot;&gt;sur garmin connect&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;A Die : La croix de justin au départ de die Important cette balade est fermé depuis 2014 cf &lt;a href=&quot;http://www.ladrometourisme.com/fr/je-prepare/activite-de-pleine-nature/randonnee--sitraloi494204--circuit-pedestre-la-croix-de-justin--die.html&quot;&gt;ici&lt;/a&gt; la trace &lt;a href=&quot;https://connect.garmin.com/modern/activity/762118388&quot;&gt;sur garmin connect&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;A Grenoble : la course de la resistance la trace &lt;a href=&quot;https://connect.garmin.com/modern/activity/768314092&quot;&gt;sur garmin connect&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Charente maritime&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Entre forêts et plage, départ des sables vignier ile d&apos;Oléron la trace  &lt;a href=&quot;https://connect.garmin.com/modern/activity/775215939&quot;&gt;sur garmin connect&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+	</description>
+    </item>
+    <item>
+      <title>Mon equipement 2015</title>
+      <link>http://www.tisseurdetoile.net/blog/2015/2015-01-01-equipements.html</link>
+      <pubDate>jeu., 1 janv. 2015 00:00:00 +0100</pubDate>
+      <guid isPermaLink="false">blog/2015/2015-01-01-equipements.html</guid>
+      	<description>
+	&lt;h3&gt;Vélos&lt;/h3&gt;
+&lt;h4&gt;VéloTaff Giant ROAM 1 Disc&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Éclairage Reelight SL600&lt;/li&gt;
+&lt;li&gt;Casque Bell crossfire - efficace et pas cher&lt;/li&gt;
+&lt;li&gt;Pédales time attac&lt;/li&gt;
+&lt;li&gt;Chaussures Mavic Alpine et Cruize&lt;/li&gt;
+&lt;li&gt;Sacoches  Mainstream MSX SL 55 Classic&lt;/li&gt;
+&lt;li&gt;Sac à dos Osprey Escapist 30&lt;/li&gt;
+&lt;li&gt;Charette à enfants Croozer kid for two.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Vélo route Cannondale quick speed 4&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Casque giro transfer&lt;/li&gt;
+&lt;li&gt;Pédales time attac&lt;/li&gt;
+&lt;li&gt;Chaussures Sidi LOGO&lt;/li&gt;
+&lt;li&gt;Capteur vitesse cadence Garmin GSC10&lt;/li&gt;
+&lt;li&gt;Sac à dos Osprey Viper 10&lt;/li&gt;
+&lt;li&gt;Garmin Edge 810&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Vélo VTT Trek 4300&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Casque giro transfer&lt;/li&gt;
+&lt;li&gt;Pédales time Z-Strong&lt;/li&gt;
+&lt;li&gt;Chaussures Sidi LOGO&lt;/li&gt;
+&lt;li&gt;Capteur vitesse cadence Garmin GSC10&lt;/li&gt;
+&lt;li&gt;Sac à dos Osprey Viper 10&lt;/li&gt;
+&lt;li&gt;Garmin Edge 810&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Running&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Montre GPS Garmin Fenix3&lt;/li&gt;
+&lt;li&gt;Ceinture cardio HRM Run&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Natation&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Montre Garmin Swim&lt;/li&gt;
+&lt;li&gt;pullBuoy Decathlon&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Divers Etc&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Appareil photo Sony RX100&lt;/li&gt;
+&lt;li&gt;Video Rollei s-50 Wifi&lt;/li&gt;
+&lt;li&gt;Mon profil &lt;a href=&quot;http://connect.garmin.com/profile/tisseurdetoile&quot;&gt;garminConnect&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+	</description>
+    </item>
+  </channel>
+</rss>

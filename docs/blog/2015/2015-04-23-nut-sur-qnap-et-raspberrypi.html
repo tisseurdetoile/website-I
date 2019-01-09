@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>Prise en charge d&#39;un onduleur avec QNAP et raspbery PI</title>
+
+      <meta name="viewport" content="width=device-width, initial-scale=0.5">
+
+    <meta name="description" content="Digression et tautologie">
+    <meta name="author" content="Le TisseurDeToile">
+
+    <meta name="tags" content="article,qnap,serveur,raspberry,nut">
+
+    <link href="/feed.xml" rel="alternate" type="application/rss+xml" title="Les derniers billets" />
+
+    <meta name="generator" content="JBake">
+
+    <link rel="stylesheet" href="../../stylesheet.css">
+
+      <meta property="og:url" content="http://www.tisseurdetoile.net/blog/2015/2015-04-23-nut-sur-qnap-et-raspberrypi.html" />
+      <meta property="og:title" content="Prise en charge d&#39;un onduleur avec QNAP et raspbery PI" />
+
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+    <meta name="twitter:site" content="@tisseurdetoile" />
+    <meta name="twitter:creator" content="@tisseurdetoile" />
+
+    <link rel="manifest" href="../../site.webmanifest"/>
+    <link rel="shortcut icon" href="../../favicon.ico" />
+    <link rel="stylesheet" href="../../main.css">
+    <link rel="stylesheet" href="../../css/line-awesome.min.css">
+
+	<script>
+	  const baseUrl = '/';
+	  const baseUrlIndex = '/index.html';
+      hljs.initHighlightingOnLoad();
+	</script>
+  </head>
+<body>
+<div class="inner" style="position:relative;">
+	<div class="side-btn">
+		<a href="/" class="back">
+			<span class="la-stack la-2x">
+			<i class="la la-circle-thin la-stack-2x"></i>
+			<i class="la la-home la-stack-1x"></i>
+			</span>
+		</a>
+	</div>
+		<div class="blog-post">
+			<h2>Prise en charge d'un onduleur avec QNAP et raspbery PI</h2>
+			<h2>Préambule</h2>
+<p>Avec plusieur raspberry pi, un NAS QNAP 219 le tout branché sur un onduler APC 500<br />
+voilà une bonne raison pour installer la gestion en réseau de l'onduleur avec NUT.<br />
+A noter que le NAS ne peut être le poste Serveur Nut, car il n'est pas constament allumé.</p>
+<p>Le serveur Nut est un raspberryPi avec pour ip 192.168.0.9</p>
+<h2>Installation du serveur</h2>
+<pre><code># sudo apt-get install nut
+</code></pre>
+<h3>Detection de l'onduleur</h3>
+<pre><code># lsub
+Bus 001 Device 004: ID 051d:0002 American Power Conversion Uninterruptible Power Supply
+# dmesg  | grep UPS 
+usb 1-1.3: Product: Back-UPS CS 500 FW:808.q10 .I USB FW:q10 
+hid-generic 0003:051D:0002.0001: hiddev0,hidraw0: USB HID v1.10 ...
+</code></pre>
+<p>L'onduleur est accèsible dans hidraw0</p>
+<h3>/etc/udev/rules.d/99_nut-serialups.rules</h3>
+<pre><code># sudo nano /etc/udev/rules.d/99_nut-serialups.rules
+
+KERNEL==&quot;hidraw0&quot;, GROUP=&quot;nut&quot;
+
+# sudo udevadm trigger
+# sudo udevadm control --reload-rules
+</code></pre>
+<h3>nut.conf</h3>
+<pre><code># sudo nano /etc/nut/nut.conf
+
+MODE=netserver
+</code></pre>
+<h3>ups.conf</h3>
+<pre><code># sudo nano /etc/nut/nut.conf
+
+[qnapups]
+	driver = usbhid-ups
+	port = /dev/hidraw0
+	desc = &quot;Server&quot;
+</code></pre>
+<h3>upsd.conf</h3>
+<pre><code>#sudo nano /etc/nut/nut.conf
+
+LISTEN 127.0.0.1
+LISTEN 192.168.0.9
+</code></pre>
+<h3>configuration des utilisateurs</h3>
+<pre><code># sudo nano /etc/nut/upsd.user
+
+[nut]
+password = nut
+allowfrom = localhost lan
+upsmon master
+actions = SET
+instcmds = ALL
+
+[admin]
+password = 123456
+allowfrom = localhost lan
+actions = SET
+instcmds = ALL
+upsmon slave           # or upsmon slave
+</code></pre>
+<h3>/etc/nut/upsmon.conf</h3>
+<pre><code># sudo nano /etc/nut/upsmon.conf
+
+MONITOR qnapups@localhost 1 nut nut master
+</code></pre>
+<h2>Configuration des clients</h2>
+<pre><code>sudo apt-get install nut-client
+</code></pre>
+<h3>nut.conf</h3>
+<pre><code># sudo nano /etc/nut/nut.conf
+
+MODE=netclient
+</code></pre>
+<h3>upsmon.conf</h3>
+<pre><code># sudo nano /etc/nut/nut.conf
+
+MONITOR qnapups@192.168.0.9 1 admin 123456 slave
+</code></pre>
+<h3>Specificité pour qnap</h3>
+<p>En regardant la config du NAS Qnap en mode esclave seul l'ip du serveur est configurable. Le reste est stocké en dur. L'onduleur doit être identifié par le nom qnapups, l'utilisateur qui fera les requete est admin avec pour mot de passe 123456. Par defaut d'ailleur admin accede à toute la configuration.<br />
+Pour configurer l'onduleur sur le NAS : aller dans Dispositif Externe &gt; UPS / ASI<br />
+Choisissez dispositif externe et specifier l'adresse du serveur ici 192.168.0.9</p>
+<h2>bonus suivie des données dans domoticz</h2>
+<p>Ayant un raspberryPi faisant tournée domoticz il me parraissait pertinent de recuperer les informations<br />
+de l'onduleur charge, niveau de batterie et temperature pour les afficher dans domoticz.</p>
+<ul>
+<li>tout d'abord il faut creer trois capteur virtuel et noter leur ID
+<ul>
+<li>charge en pourcentage</li>
+<li>niveau de batterie en pourcentage</li>
+<li>temperature</li>
+</ul>
+</li>
+</ul>
+<h2>bbliographie</h2>
+<p><a href="http://abakalidis.blogspot.fr/2013/04/using-raspberry-pi-as-ups-server-with.html">http://abakalidis.blogspot.fr/2013/04/using-raspberry-pi-as-ups-server-with.html</a></p>
+
+			<br />
+			<br />
+			<br />
+			<br />
+
+<ul class="sharelinks">
+<li><a href="/" class="share-btn"><i class="la la-lg la-share"></i></a></li>
+
+<li><a href="http://www.tisseurdetoile.net/blog/2015/2015-04-08-un-serveur-git-sur-son-smartphone.html" title="Installer un serveur GIT avec LinuxDeploy Debian" class="share-btn">
+<i class="la la-lg la-angle-left"></i></a></li>
+
+<li><a href="//twitter.com/share?url=http%3A%2F%2Fwww.tisseurdetoile.net%2Fblog%2F2015%2F2015-04-23-nut-sur-qnap-et-raspberrypi.html&text=Prise%20en%20charge%20d'un%20onduleur%20avec%20QNAP%20et%20raspbery%20PI&via=tisseurdetoile" target="_blank" class="share-btn twitter">
+    <i class="la la-twitter"></i>
+</a></li>
+
+<li><a href="//www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.tisseurdetoile.net%2Fblog%2F2015%2F2015-04-23-nut-sur-qnap-et-raspberrypi.html" target="_blank" class="share-btn facebook">
+    <i class="la la-facebook"></i>
+</a></li>
+
+<li><a href="//www.linkedin.com/shareArticle?url=http%3A%2F%2Fwww.tisseurdetoile.net%2Fblog%2F2015%2F2015-04-23-nut-sur-qnap-et-raspberrypi.html&title=Prise%20en%20charge%20d'un%20onduleur%20avec%20QNAP%20et%20raspbery%20PI" target="_blank" class="share-btn linkedin">
+    <i class="la la-linkedin"></i>
+</a></li>
+
+<li><a href="mailto:?subject=Check%20out%20this%20post%20by%20Le%20TisseurDeToile&body=http%3A%2F%2Fwww.tisseurdetoile.net%2Fblog%2F2015%2F2015-04-23-nut-sur-qnap-et-raspberrypi.html" target="_blank" class="share-btn email">
+    <i class="la la-envelope"></i>
+</a></li>
+
+ <li><a href="http://www.tisseurdetoile.net/blog/2015/2015-05-29-balade+reel+et+web+II.html" title="Balade réel et web II" class="share-btn">
+ <i class="la la-lg la-angle-right"></i></a></li>
+</ul>
+
+		</div>
+
+      <footer>
+        <hr>
+        <small style="font-size:16px;">
+          &copy; 2018 <a href="https://github.com/tisseurdetoile">Le TisseurDeToile.</a>
+          Baked with <a href="http://jbake.org">JBake v2.6.3</a> using the jbaked-<a href="http://github.com/tisseurdetoile/jbake-yinwang">yinwang</a> theme.
+        </small>
+      </footer>
+    </div>     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+
+    <!-- BAKED AT <2019-01-09T22:13:04+01:00> -->
+  </body>
+</html>

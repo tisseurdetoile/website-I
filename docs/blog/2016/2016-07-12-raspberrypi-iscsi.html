@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>ISCSI root avec un raspberry PI.</title>
+
+      <meta name="viewport" content="width=device-width, initial-scale=0.5">
+
+    <meta name="description" content="Digression et tautologie">
+    <meta name="author" content="Le TisseurDeToile">
+
+    <meta name="tags" content="iscsi,raspberry,howto">
+
+    <link href="/feed.xml" rel="alternate" type="application/rss+xml" title="Les derniers billets" />
+
+    <meta name="generator" content="JBake">
+
+    <link rel="stylesheet" href="../../stylesheet.css">
+
+      <meta property="og:url" content="http://www.tisseurdetoile.net/blog/2016/2016-07-12-raspberrypi-iscsi.html" />
+      <meta property="og:title" content="ISCSI root avec un raspberry PI." />
+
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+    <meta name="twitter:site" content="@tisseurdetoile" />
+    <meta name="twitter:creator" content="@tisseurdetoile" />
+
+    <link rel="manifest" href="../../site.webmanifest"/>
+    <link rel="shortcut icon" href="../../favicon.ico" />
+    <link rel="stylesheet" href="../../main.css">
+    <link rel="stylesheet" href="../../css/line-awesome.min.css">
+
+	<script>
+	  const baseUrl = '/';
+	  const baseUrlIndex = '/index.html';
+      hljs.initHighlightingOnLoad();
+	</script>
+  </head>
+<body>
+<div class="inner" style="position:relative;">
+	<div class="side-btn">
+		<a href="/" class="back">
+			<span class="la-stack la-2x">
+			<i class="la la-circle-thin la-stack-2x"></i>
+			<i class="la la-home la-stack-1x"></i>
+			</span>
+		</a>
+	</div>
+		<div class="blog-post">
+			<h2>ISCSI root avec un raspberry PI.</h2>
+			<p>Pour palier au problème d'usure des cartes SD j'utilisais <a href="http://www.berryterminal.com/doku.php/berryboot">berryBoot</a> pour installer linux sur un LUN iscsi. Mais cette solution quoi que pratique ne supporte pas très bien les mises à jour du noyau. Depuis quelques temps raspbian supporte de façon native le iscsi. voici comment installer raspbian avec iscsi.</p>
+<h2>Informations</h2>
+<h3>Configuration</h3>
+<p>Client : Raspberry PI2 / Raspbian jessy lite V4.4 / 2016-05-27 sur Sdcard 4Go Samsung<br />
+Serveur iscsi : QNAP TS-131 / adresse ip 192.168.0.10<br />
+Box Internet : serveur DHCP</p>
+<h3>Prérequis</h3>
+<p>La machine cliente sera l'initiateur et devra avoir un nom d'initiateur icsci dont le format est le suivant iqn.yyyy-mm.naming-authority:unique il doit être unique sur le réseau. dans cet exemple le nom sera iqn.2012-07.org.raspbian:raspberry:local.home.raspbian. Le nom de la cible sera définis au niveau du NAS dans cette exemple se sera iqn.2004-04.com.qnap:ts-131:iscsi.raspbian.e65bfb.</p>
+<h2>Installation</h2>
+<h3>Préparer le disque iscsi</h3>
+<p>Il suffit de créer une cible(target) iscsi avec son volume (LUN) en suivant la<br />
+<a href="https://www.qnap.com/i/en/tutorial/con_show.php?op=showone&amp;cid=29">Documentation QNAP</a></p>
+<h3>Installer raspbian lite</h3>
+<p>J'utilise une raspbian lite disponible <a href="https://www.raspberrypi.org/downloads/raspbian/">ici</a> documentation d'installation <a href="https://www.raspberrypi.org/documentation/installation/installing-images/README.md">là</a><br />
+Mettre la sdcard dans le raspberry pi et mettez le sous tension.<br />
+connecter vous avec l'utilisateur pi mot de passe raspberry<br />
+exécuter les commandes suivantes :<br />
+1. <code>sudo aptitude update</code><br />
+2. <code>sudo aptitude upgrade</code><br />
+3. <code>sudo aptitude install rsync open-iscsi</code><br />
+4. <code>sudo reboot</code></p>
+<h3>Finaliser l'installation iscsi</h3>
+<p>reconnecter vous avec l'utilisateur pi<br />
+1. <code>sudo nano /etc/iscsi/initiatorname.iscsi</code> mettre la valeur iqn.2012-07.org.raspbian:raspberry:local.home.raspbian<br />
+2. <code>sudo /etc/init.d/open-iscsi start</code><br />
+3. <code>sudo systemctl daemon-reload</code><br />
+4. <code>sudo iscsiadm --mode discovery --type sendtargets --portal 192.168.0.10:3260</code><br />
+résultat : 192.168.0.10:3260,1 iqn.2004-04.com.qnap:ts-131:iscsi.raspbian.e65bfb<br />
+5. <code>sudo iscsiadm -m node --targetname &quot;iqn.2004-04.com.qnap:ts-131:iscsi.raspbian.e65bfb&quot; --portal &quot;192.168.0.10:3260&quot; --login</code><br />
+6. <code>sudo mkfs.ext4 -m0 /dev/sda</code><br />
+7. <code>sudo mkdir /mnt/iscsi &amp;&amp; sudo mount /dev/sda /mnt/iscsi</code><br />
+8. <code>sudo rsync -avhP --exclude /boot --exclude /proc --exclude /sys --exclude /mnt / /mnt/iscsi/</code><br />
+9. <code>sudo mkdir /mnt/iscsi/{proc,sys,boot,initrd,mnt}</code><br />
+10. <code>sudo touch /etc/iscsi/iscsi.initramfs</code>  (nécessaire à update-initramfs)<br />
+11. <code>sudo touch /mnt/iscsi/etc/iscsi/iscsi.initramfs</code><br />
+12. <code>sudo update-initramfs -c -k `uname -r`</code><br />
+résultat : update-initramfs: Generating /boot/initrd.img-4.4.13-v7<br />
+13. <code>sudo cp /boot/kernel7.img /boot/kernel7-4.4.13-v7+.img</code><br />
+14. <code>sudo nano /boot/config.txt</code><br />
+ajouter :<br />
+kernel=kernel7-4.4.13-v7+.img<br />
+initramfs initrd.img-4.4.13-v7+ followkernel<br />
+15. <code>sudo blkid /dev/sda</code><br />
+résultat : /dev/sda: UUID=&quot;b042d66d-ead3-4742-953a-61e2bf162aaf&quot; TYPE=&quot;ext4&quot;<br />
+16. <code>sudo nano /boot/cmdline.txt</code><br />
+ip=::::raspberrypi:eth0:dhcp ISCSI_INITIATOR=iqn.2012-07.org.raspbian:raspberry:local.home.raspbian ISCSI_TARGET_NAME=iqn.2004-04.com.qnap:ts-131:iscsi.raspbian.e65bfb ISCSI_TARGET_IP=192.168.0.10 ISCSI_TARGET_PORT=3260 dwc_otg.lpm_enable=0 console=serial0,115200 console=tty1 root=UUID=b042d66d-ead3-4742-953a-61e2bf162aaf rootfstype=ext4 elevator=deadline fsck.repair=yes rootwait</p>
+<h4>Nota</h4>
+<p>Les étapes 7, 8 et 9 permettent de copier l'installation vers le fileSystem iscsi.<br />
+Les étapes 10,11,12 et 13 assure que le noyau et les modules ne changent pas après une mise à jour.<br />
+L'étape 15 configure la connexion vers la cible iscsi.</p>
+<h3>Conclusion</h3>
+<p>voilà vous n'avez plus qu'a faire rebooter, vous verrez votre pi récupérer une adresse ip puis monter le disque iscsi et continuer le démarrage.<br />
+Vous pouvez donc cloner une installation complète comme ceci :<br />
+- sauvegarder le LUN de cette installation, le copier vers un nouveau LUN associé à une nouvelle cible<br />
+- copier le contenu de la sdcard sur une nouvelle éditer le fichier /boot/cmdline.txt<br />
+- changer les paramètres suivant pour qu'il corresponde à cette nouvelle cible n'oublier pas de changer le nom de l'initiateur :<br />
+ISCSI_INITIATOR=iqn.2012-07.org.raspbian:raspberry:local.home.raspbian ISCSI_TARGET_NAME=iqn.2004-04.com.qnap:ts-131:iscsi.raspbian.e65bfb ISCSI_TARGET_IP=192.168.0.10 ISCSI_TARGET_PORT=3260</p>
+<h2>Bibliographie :</h2>
+<p>source :<br />
+1. <a href="https://www.reddit.com/r/raspberry_pi/comments/49l25b/iscsi_booting_your_raspberry_pi/">https://www.reddit.com/r/raspberry_pi/comments/49l25b/iscsi_booting_your_raspberry_pi/</a><br />
+2. <a href="https://www.raspberrypi.org/forums/viewtopic.php?f=29&amp;t=151302">https://www.raspberrypi.org/forums/viewtopic.php?f=29&amp;t=151302</a></p>
+<h2>Changelog</h2>
+<p>2016-07-14 : correction de coquille dans les commandes.</p>
+
+			<br />
+			<br />
+			<br />
+			<br />
+
+<ul class="sharelinks">
+<li><a href="/" class="share-btn"><i class="la la-lg la-share"></i></a></li>
+
+<li><a href="http://www.tisseurdetoile.net/blog/2016/2016-02-24-scripts_domoticz.html" title="Domoticz Script lua Heure Creuse / Heure Pleine" class="share-btn">
+<i class="la la-lg la-angle-left"></i></a></li>
+
+<li><a href="//twitter.com/share?url=http%3A%2F%2Fwww.tisseurdetoile.net%2Fblog%2F2016%2F2016-07-12-raspberrypi-iscsi.html&text=ISCSI%20root%20avec%20un%20raspberry%20PI.&via=tisseurdetoile" target="_blank" class="share-btn twitter">
+    <i class="la la-twitter"></i>
+</a></li>
+
+<li><a href="//www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.tisseurdetoile.net%2Fblog%2F2016%2F2016-07-12-raspberrypi-iscsi.html" target="_blank" class="share-btn facebook">
+    <i class="la la-facebook"></i>
+</a></li>
+
+<li><a href="//www.linkedin.com/shareArticle?url=http%3A%2F%2Fwww.tisseurdetoile.net%2Fblog%2F2016%2F2016-07-12-raspberrypi-iscsi.html&title=ISCSI%20root%20avec%20un%20raspberry%20PI." target="_blank" class="share-btn linkedin">
+    <i class="la la-linkedin"></i>
+</a></li>
+
+<li><a href="mailto:?subject=Check%20out%20this%20post%20by%20Le%20TisseurDeToile&body=http%3A%2F%2Fwww.tisseurdetoile.net%2Fblog%2F2016%2F2016-07-12-raspberrypi-iscsi.html" target="_blank" class="share-btn email">
+    <i class="la la-envelope"></i>
+</a></li>
+
+ <li><a href="http://www.tisseurdetoile.net/blog/2017/2017-01-09-equipement.html" title="Mon équipement 2017" class="share-btn">
+ <i class="la la-lg la-angle-right"></i></a></li>
+</ul>
+
+		</div>
+
+      <footer>
+        <hr>
+        <small style="font-size:16px;">
+          &copy; 2018 <a href="https://github.com/tisseurdetoile">Le TisseurDeToile.</a>
+          Baked with <a href="http://jbake.org">JBake v2.6.3</a> using the jbaked-<a href="http://github.com/tisseurdetoile/jbake-yinwang">yinwang</a> theme.
+        </small>
+      </footer>
+    </div>     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+
+    <!-- BAKED AT <2019-01-09T22:13:04+01:00> -->
+  </body>
+</html>
